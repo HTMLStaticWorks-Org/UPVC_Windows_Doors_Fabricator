@@ -1,0 +1,435 @@
+import os
+from templates import get_head, get_header, get_footer
+
+def build_contact():
+    content = get_head("Contact Us & Free Measurement Booking", "contact")
+    content += get_header("contact")
+    content += """
+  <main class="flex-grow">
+    <!-- SECTION 1: MODERN CONTACT HERO SECTION -->
+    <section class="relative min-h-[48vh] flex items-center justify-center overflow-hidden py-20 px-4 sm:px-8 bg-charcoal text-white">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=2000&q=85" 
+             alt="VISTRAL architectural offices and engineering consultation desk" 
+             class="w-full h-full object-cover filter brightness-[0.35]">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center space-y-6" data-aos="fade-up">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-bronze-200 text-xs uppercase tracking-widest font-mono font-semibold rtl:space-x-reverse">
+          <span class="w-2 h-2 rounded-full bg-bronze"></span>
+          <span>Connect With Our Engineering Board</span>
+        </div>
+
+        <h1 class="font-display font-extrabold text-4xl sm:text-6xl tracking-tight text-white leading-tight">
+          Let's Discuss Your Windows & Doors
+        </h1>
+
+        <p class="text-base sm:text-lg text-stone-200 max-w-2xl mx-auto font-normal leading-relaxed">
+          Book a complimentary on-site laser survey or send your architectural blueprints for an itemized estimate.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: COMPANY CONTACT DETAILS -->
+    <section class="py-20 px-4 sm:px-8 bg-ivory dark:bg-[#12181F] architectural-grid">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <!-- Card 1: Headquarters -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm space-y-3" data-aos="fade-up">
+            <div class="w-12 h-12 rounded-2xl bg-bronze/15 text-bronze flex items-center justify-center">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal dark:text-white">Headquarters & Plant</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              742 Fenestration Blvd, Suite 400<br>
+              Industrial Tech Park, Munich &bull; Berlin<br>
+              Global Export Division
+            </p>
+          </div>
+
+          <!-- Card 2: Phone & Toll-Free -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm space-y-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 rounded-2xl bg-bronze/15 text-bronze flex items-center justify-center">
+              <i data-lucide="phone-call" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal dark:text-white">Direct Engineering Line</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Toll Free: +1 (800) 482-7832<br>
+              Direct Desk: +49 (89) 2341-9800<br>
+              WhatsApp: +49 (171) 980-2341
+            </p>
+          </div>
+
+          <!-- Card 3: Email Inquiries -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm space-y-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 rounded-2xl bg-bronze/15 text-bronze flex items-center justify-center">
+              <i data-lucide="mail" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal dark:text-white">Email Inquiries</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Estimates: quotes@vistralsystems.com<br>
+              Architects: spec@vistralsystems.com<br>
+              Support: care@vistralsystems.com
+            </p>
+          </div>
+
+          <!-- Card 4: Working Hours -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm space-y-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-12 h-12 rounded-2xl bg-bronze/15 text-bronze flex items-center justify-center">
+              <i data-lucide="clock" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal dark:text-white">Showroom & Plant Hours</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Mon &ndash; Fri: 08:00 AM &ndash; 06:30 PM<br>
+              Saturday: 09:00 AM &ndash; 04:00 PM<br>
+              Sunday: By Appointment Only
+            </p>
+          </div>
+        </div>
+
+        <!-- Architectural Social Channels Showcase -->
+        <div class="mt-10 p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6" data-aos="fade-up">
+          <div class="space-y-1 text-center md:text-left rtl:md:text-right">
+            <span class="text-xs uppercase font-bold tracking-widest text-bronze font-mono">Official Broadcast Channels</span>
+            <h4 class="font-display text-lg font-bold text-charcoal dark:text-white">Connect Across Architectural & Design Networks</h4>
+          </div>
+          
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <!-- LinkedIn (#0A66C2) -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn-linkedin w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-ivory dark:bg-[#12181F] border border-charcoal/10 dark:border-white/10 flex items-center justify-center text-charcoal dark:text-stone-300 shadow-sm" title="LinkedIn" aria-label="LinkedIn">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.67 1.67 0 1 0 0-3.34 1.67 1.67 0 0 0 0 3.34m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+              </svg>
+            </a>
+            
+            <!-- Instagram (Official Gradient) -->
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn-instagram w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-ivory dark:bg-[#12181F] border border-charcoal/10 dark:border-white/10 flex items-center justify-center text-charcoal dark:text-stone-300 shadow-sm" title="Instagram" aria-label="Instagram">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            
+            <!-- YouTube (#FF0000) -->
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn-youtube w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-ivory dark:bg-[#12181F] border border-charcoal/10 dark:border-white/10 flex items-center justify-center text-charcoal dark:text-stone-300 shadow-sm" title="YouTube" aria-label="YouTube">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            
+            <!-- Pinterest (#E60023) -->
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-btn-pinterest w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-ivory dark:bg-[#12181F] border border-charcoal/10 dark:border-white/10 flex items-center justify-center text-charcoal dark:text-stone-300 shadow-sm" title="Pinterest" aria-label="Pinterest">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
+              </svg>
+            </a>
+
+            <!-- WhatsApp (#25D366) -->
+            <a href="https://wa.me/491719802341" target="_blank" rel="noopener" class="social-btn-whatsapp w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-ivory dark:bg-[#12181F] border border-charcoal/10 dark:border-white/10 flex items-center justify-center text-charcoal dark:text-stone-300 shadow-sm" title="WhatsApp" aria-label="WhatsApp">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.761.882 2.796.882 3.183 0 5.769-2.587 5.77-5.766.001-3.187-2.575-5.77-5.77-5.77zm0-2.172c4.418 0 8 3.582 8 8 0 4.418-3.582 8-8 8-1.396 0-2.703-.36-3.837-.992l-5.163 1.352 1.378-5.034c-.722-1.182-1.147-2.569-1.147-4.057 0-4.418 3.582-8 8-8z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE ENQUIRY FORM -->
+    <section class="py-24 px-4 sm:px-8 bg-white dark:bg-[#182029] border-y border-charcoal/10 dark:border-white/10">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <span class="text-xs uppercase font-bold tracking-widest text-bronze block mb-2">Fast Assistance</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-charcoal dark:text-white">
+            General Inquiries & Architectural Feedback
+          </h2>
+          <p class="text-xs sm:text-sm text-charcoal/70 dark:text-stone-300 mt-2">
+            Have a question about frame thickness, glass specifications, or export logistics? Send our team a note.
+          </p>
+        </div>
+
+        <form id="contactForm" class="p-8 sm:p-12 rounded-3xl bg-ivory dark:bg-[#12181F] border border-charcoal/10 dark:border-white/10 shadow-xl space-y-6" data-aos="fade-up">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Your Name *</label>
+              <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Email Address *</label>
+              <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Phone Number</label>
+              <input type="tel" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Subject / Inquiry Nature</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+                <option>Product Specifications & Engineering</option>
+                <option>Architectural Partnership Inquiry</option>
+                <option>Dealer & Distributor Application</option>
+                <option>Warranty & Maintenance Support</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Your Message *</label>
+            <textarea required rows="4" placeholder="Detail your project requirements, location, and questions..." class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze"></textarea>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-2">
+            <span class="text-[11px] text-charcoal/60 dark:text-stone-400 text-center sm:text-left rtl:sm:text-right">We respect client privacy. 100% confidential.</span>
+            <button type="submit" class="w-full sm:w-auto bronze-gradient-btn px-8 py-3.5 rounded-xl text-xs uppercase font-bold tracking-wider inline-flex items-center justify-center space-x-2 rtl:space-x-reverse">
+              <span>Send Message</span>
+              <i data-lucide="send" class="w-4 h-4 icon-flip"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FREE SITE MEASUREMENT & CONSULTATION BOOKING FORM -->
+    <section id="measurement-booking" class="py-24 px-4 sm:px-8 bg-ivory dark:bg-[#12181F] architectural-grid">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-bronze/15 border border-bronze/30 text-bronze text-xs uppercase tracking-widest font-mono font-semibold mb-3 rtl:space-x-reverse">
+            <i data-lucide="ruler" class="w-4 h-4"></i>
+            <span>Complimentary Engineering Survey</span>
+          </div>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-charcoal dark:text-white tracking-tight">
+            Free Site Measurement & Consultation Booking
+          </h2>
+          <p class="text-xs sm:text-sm text-charcoal/70 dark:text-stone-300 mt-3 leading-relaxed">
+            Our certified fenestration surveyor will visit your building site with Leica 3D laser scanners, acoustic noise meters, and physical profile swatches.
+          </p>
+        </div>
+
+        <!-- Comprehensive 10-Field Form matching all exact requirements -->
+        <form id="measurementForm" class="p-8 sm:p-14 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-2xl space-y-8" data-aos="fade-up">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 1. Full Name -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">1. Full Name *</label>
+              <input type="text" required placeholder="Alex Mercer" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+
+            <!-- 2. Phone Number -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">2. Phone Number *</label>
+              <input type="tel" required placeholder="+1 (555) 234-5678" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+
+            <!-- 3. Email Address -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">3. Email Address *</label>
+              <input type="email" required placeholder="alex@mercer.com" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 4. Property Type -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">4. Property Type *</label>
+              <div class="relative">
+                <select required class="w-full appearance-none px-4 py-3 pr-10 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze cursor-pointer">
+                  <option value="">Select Property Type</option>
+                  <option value="Residential">Residential Villa / Apartment</option>
+                  <option value="Commercial">Commercial Building / Mall</option>
+                  <option value="Office">Office Corporate Complex</option>
+                  <option value="Other">Other / Institutional</option>
+                </select>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-bronze pointer-events-none absolute right-4 rtl:right-auto rtl:left-4 top-1/2 -translate-y-1/2"></i>
+              </div>
+            </div>
+
+            <!-- 5. Required Product -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">5. Required Product *</label>
+              <div class="relative">
+                <select required class="w-full appearance-none px-4 py-3 pr-10 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze cursor-pointer">
+                  <option value="">Select Category</option>
+                  <option value="Windows">UPVC Windows Only</option>
+                  <option value="Doors">UPVC Doors Only</option>
+                  <option value="Both">Both Windows & Doors</option>
+                </select>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-bronze pointer-events-none absolute right-4 rtl:right-auto rtl:left-4 top-1/2 -translate-y-1/2"></i>
+              </div>
+            </div>
+
+            <!-- 6. Number of Windows / Doors -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">6. Number of Units *</label>
+              <input type="number" min="1" max="500" required placeholder="e.g. 14 Units" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 7. Preferred Measurement Date -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">7. Preferred Date *</label>
+              <input type="date" required class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+
+            <!-- 8. Property Location -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">8. Property Location / Address *</label>
+              <input type="text" required placeholder="City, District, Landmark" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+
+            <!-- 9. Approximate Dimensions -->
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">9. Approx Dimensions (W × H)</label>
+              <input type="text" placeholder="e.g. 2400mm × 1800mm or sq.ft" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            </div>
+          </div>
+
+          <!-- 10. Additional Requirements -->
+          <div>
+            <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">10. Additional Requirements & Glazing Preferences</label>
+            <textarea rows="3" placeholder="Specify any acoustic noise issues, preferred profile color (Anthracite Grey, Oak), Low-E glass, or motorized insect screens..." class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze"></textarea>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-charcoal/10 dark:border-white/10">
+            <label class="flex items-center space-x-2 text-xs text-charcoal/70 dark:text-stone-300 rtl:space-x-reverse cursor-pointer">
+              <input type="checkbox" required class="rounded text-bronze focus:ring-bronze">
+              <span>I confirm the location is accessible for structural survey.</span>
+            </label>
+
+            <!-- Submit Request button -->
+            <button type="submit" class="w-full sm:w-auto bronze-gradient-btn px-10 py-4 rounded-xl text-xs uppercase font-bold tracking-wider inline-flex items-center justify-center space-x-2 rtl:space-x-reverse shadow-xl">
+              <span>Submit Request & Confirm Survey</span>
+              <i data-lucide="check" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GOOGLE MAPS INTEGRATION, FAQ AND FINAL CTA -->
+    <section id="faq" class="py-24 px-4 sm:px-8 bg-charcoal text-white relative">
+      <div class="max-w-7xl mx-auto space-y-16">
+        <!-- Centered FAQ Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-14" data-aos="fade-up">
+          <div class="inline-flex items-center space-x-2 rtl:space-x-reverse justify-center mb-2">
+            <span class="w-6 h-0.5 bg-bronze"></span>
+            <span class="text-xs uppercase font-bold tracking-widest text-bronze font-mono">Knowledge Base</span>
+            <span class="w-6 h-0.5 bg-bronze"></span>
+          </div>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            Frequently Asked Architectural Questions
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-300 mt-3 max-w-xl mx-auto leading-relaxed">
+            Find technical answers regarding multi-chamber UPVC profiles, cyclone resistance, thermal performance, and warranties.
+          </p>
+        </div>
+
+        <!-- FAQ Accordion Layout with Dropdown Arrows -->
+        <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up">
+          <!-- Question 1 -->
+          <details class="group p-6 rounded-2xl bg-white/5 border border-white/10 transition-all hover:border-bronze/40 cursor-pointer" open>
+            <summary class="flex items-center justify-between font-display font-bold text-base text-white list-none select-none">
+              <span>How does UPVC compare to thermal-break aluminum?</span>
+              <span class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-bronze group-open:bg-bronze group-open:text-white transition-all duration-300 ml-4 rtl:ml-0 rtl:mr-4 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4 transform group-open:rotate-180 transition-transform duration-300"></i>
+              </span>
+            </summary>
+            <div class="pt-4 text-xs sm:text-sm text-stone-300 leading-relaxed border-t border-white/10 mt-4">
+              UPVC has an intrinsic thermal conductivity of approximately 0.16 W/mK, compared to raw aluminum's 200 W/mK. Even thermal-break aluminum relies on an internal polyamide strip, whereas solid UPVC profiles are naturally non-conductive, eliminating surface condensation and saving more HVAC power.
+            </div>
+          </details>
+
+          <!-- Question 2 -->
+          <details class="group p-6 rounded-2xl bg-white/5 border border-white/10 transition-all hover:border-bronze/40 cursor-pointer">
+            <summary class="flex items-center justify-between font-display font-bold text-base text-white list-none select-none">
+              <span>Will UPVC turn yellow or brittle under harsh tropical sun?</span>
+              <span class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-bronze group-open:bg-bronze group-open:text-white transition-all duration-300 ml-4 rtl:ml-0 rtl:mr-4 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4 transform group-open:rotate-180 transition-transform duration-300"></i>
+              </span>
+            </summary>
+            <div class="pt-4 text-xs sm:text-sm text-stone-300 leading-relaxed border-t border-white/10 mt-4">
+              Never. VISTRAL formulations utilize German-certified titanium dioxide (TiO₂) and organic calcium-zinc UV stabilizers specifically engineered for Tropical Severe Climate Zone S, retaining color brilliance and structural elasticity for over 50 years.
+            </div>
+          </details>
+
+          <!-- Question 3 -->
+          <details class="group p-6 rounded-2xl bg-white/5 border border-white/10 transition-all hover:border-bronze/40 cursor-pointer">
+            <summary class="flex items-center justify-between font-display font-bold text-base text-white list-none select-none">
+              <span>What is your warranty coverage?</span>
+              <span class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-bronze group-open:bg-bronze group-open:text-white transition-all duration-300 ml-4 rtl:ml-0 rtl:mr-4 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4 transform group-open:rotate-180 transition-transform duration-300"></i>
+              </span>
+            </summary>
+            <div class="pt-4 text-xs sm:text-sm text-stone-300 leading-relaxed border-t border-white/10 mt-4">
+              We provide a comprehensive 20-Year Manufacturer Warranty on UPVC profile color stability and structural integrity, a 10-Year Warranty on double/triple glass hermetic seals, and a 5-Year Warranty on German Maco/Roto mechanical hardware.
+            </div>
+          </details>
+
+          <!-- Question 4 -->
+          <details class="group p-6 rounded-2xl bg-white/5 border border-white/10 transition-all hover:border-bronze/40 cursor-pointer">
+            <summary class="flex items-center justify-between font-display font-bold text-base text-white list-none select-none">
+              <span>Can UPVC windows withstand coastal cyclones and driving monsoons?</span>
+              <span class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-bronze group-open:bg-bronze group-open:text-white transition-all duration-300 ml-4 rtl:ml-0 rtl:mr-4 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4 transform group-open:rotate-180 transition-transform duration-300"></i>
+              </span>
+            </summary>
+            <div class="pt-4 text-xs sm:text-sm text-stone-300 leading-relaxed border-t border-white/10 mt-4">
+              Yes. All VISTRAL profiles incorporate galvanized structural steel chamber reinforcements and co-extruded EPDM dual gaskets certified to withstand Class C5 wind loads (up to 250 km/h) and torrential wind-driven rain penetration up to 900 Pa.
+            </div>
+          </details>
+
+          <!-- Question 5 -->
+          <details class="group p-6 rounded-2xl bg-white/5 border border-white/10 transition-all hover:border-bronze/40 cursor-pointer">
+            <summary class="flex items-center justify-between font-display font-bold text-base text-white list-none select-none">
+              <span>What lead time is required for custom fabrication?</span>
+              <span class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-bronze group-open:bg-bronze group-open:text-white transition-all duration-300 ml-4 rtl:ml-0 rtl:mr-4 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4 transform group-open:rotate-180 transition-transform duration-300"></i>
+              </span>
+            </summary>
+            <div class="pt-4 text-xs sm:text-sm text-stone-300 leading-relaxed border-t border-white/10 mt-4">
+              Standard fabrication for custom residential projects takes 14 to 21 working days following laser site verification. Expedited fabrication is available for commercial project stages with sequenced site deliveries.
+            </div>
+          </details>
+        </div>
+
+        <!-- Google Maps Integration Embed Container -->
+        <div class="space-y-4" data-aos="fade-up">
+          <div class="flex items-center justify-between">
+            <span class="text-xs uppercase font-mono font-bold text-bronze">Global Manufacturing & Showroom Coordinates</span>
+            <span class="text-xs text-stone-400">Munich &bull; Berlin &bull; Worldwide Delivery</span>
+          </div>
+          <div class="w-full h-80 rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative">
+            <iframe title="VISTRAL Global Headquarters Map" 
+                    class="w-full h-full filter invert-[0.9] hue-rotate-180 contrast-[1.2]" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85150.32049870319!2d11.477002012028633!3d48.15491069818815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb93a2d458867a!2sMunich%2C%20Germany!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+                    loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Final CTA Strip -->
+        <div class="p-8 rounded-3xl bg-bronze/10 border border-bronze/30 flex flex-col sm:flex-row items-center justify-between gap-6" data-aos="fade-up">
+          <div>
+            <h4 class="font-display text-xl font-bold text-white">Have a Bespoke Architectural Drawing Ready?</h4>
+            <p class="text-xs text-stone-300 mt-1">Directly email your DWG or PDF blueprint pack for an expedited engineering review.</p>
+          </div>
+          <a href="mailto:quotes@vistralsystems.com" class="bronze-gradient-btn px-6 py-3 rounded-xl text-xs uppercase font-bold tracking-wider inline-flex items-center space-x-2 rtl:space-x-reverse flex-shrink-0">
+            <span>Email Drawings</span>
+            <i data-lucide="paperclip" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+"""
+    content += get_footer()
+    
+    with open("contact.html", "w", encoding="utf-8") as f:
+        f.write(content)
+    print("contact.html (Contact Us - exactly 5 sections) generated successfully.")
+
+if __name__ == "__main__":
+    build_contact()
+

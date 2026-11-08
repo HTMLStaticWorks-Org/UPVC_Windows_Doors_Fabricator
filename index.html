@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home 1 | VISTRAL - UPVC Architectural Systems</title>
+  <meta name="description" content="Precision crafted UPVC windows, sliding systems, and panoramic doors. European engineering, superior thermal insulation, and bespoke architectural glazing.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            bronze: {
+              DEFAULT: '#B68B58',
+              50: '#FBF8F3',
+              100: '#F4ECE1',
+              200: '#E7D5BF',
+              300: '#D9BC9B',
+              400: '#CAA477',
+              500: '#B68B58',
+              600: '#9E7443',
+              700: '#7E5B32',
+              800: '#5E4324',
+              900: '#3F2C17',
+            },
+            charcoal: {
+              DEFAULT: '#202A32',
+              50: '#F2F4F6',
+              100: '#E1E5EA',
+              200: '#C0C8D1',
+              300: '#9EABB8',
+              400: '#5F7386',
+              500: '#202A32',
+              600: '#1A232A',
+              700: '#141B21',
+              800: '#0E1317',
+              900: '#070A0C',
+            },
+            ivory: {
+              DEFAULT: '#F7F6F1',
+              50: '#FFFFFF',
+              100: '#FBFBF9',
+              200: '#F7F6F1',
+              300: '#EBE9DD',
+              400: '#DEDBC7',
+            },
+            softgrey: '#DDE2E5'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-ivory dark:bg-[#12181F] text-charcoal dark:text-stone-100 transition-colors duration-300 min-h-screen flex flex-col font-sans">
+
+  <!-- Site Header -->
+  <header class="fixed top-0 left-0 right-0 z-40 w-full glass-nav transition-shadow duration-200 py-3.5 px-4 sm:px-6 xl:px-8 border-b border-charcoal/10 dark:border-white/10 shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center space-x-2.5 sm:space-x-3 group rtl:space-x-reverse flex-shrink-0">
+        <img src="assets/logo.svg" alt="VISTRAL Logo" class="w-8 h-8 sm:w-9 sm:h-9 transform group-hover:rotate-6 transition-transform">
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-xl sm:text-2xl tracking-tight text-charcoal dark:text-white uppercase leading-none">VISTRAL</span>
+          <span class="text-[9px] sm:text-[10px] tracking-[0.25em] text-bronze uppercase font-semibold">UPVC Systems</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Responsive Spacing: never wraps at 1024px) -->
+      <nav class="hidden lg:flex items-center space-x-3 xl:space-x-6 2xl:space-x-7 rtl:space-x-reverse flex-shrink-0">
+        <a href="index.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-bronze font-bold active">Home 1</a>
+<a href="home-2.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">Home 2</a>
+<a href="about.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">About Us</a>
+<a href="products.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">Products</a>
+<a href="gallery.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">Gallery</a>
+<a href="services.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">Services</a>
+<a href="contact.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">Contact Us</a>
+
+      </nav>
+
+      <!-- Utility Controls & Actions -->
+      <div class="hidden lg:flex items-center space-x-2 xl:space-x-3 rtl:space-x-reverse flex-shrink-0">
+        <!-- RTL Toggle Icon -->
+        <button class="rtl-toggle p-2 rounded-full border border-charcoal/15 dark:border-white/15 hover:border-bronze transition-all text-charcoal dark:text-stone-200 hover:text-bronze flex items-center justify-center" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Layout Direction">
+          <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle p-2 rounded-full border border-charcoal/15 dark:border-white/15 hover:border-bronze transition-all text-charcoal dark:text-stone-200" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="theme-icon w-4 h-4"></i>
+        </button>
+
+        <!-- Login Link -->
+        <a href="login.html" class="text-xs xl:text-sm font-semibold text-charcoal/90 dark:text-stone-200 hover:text-bronze px-2 py-1 transition-colors whitespace-nowrap">
+          Login
+        </a>
+
+        <!-- Free Quote CTA -->
+        <a href="contact.html#measurement-booking" class="bronze-gradient-btn px-3 py-2 xl:px-4 xl:py-2 rounded-lg text-xs uppercase tracking-wider font-semibold inline-flex items-center space-x-1.5 xl:space-x-2 rtl:space-x-reverse whitespace-nowrap flex-shrink-0">
+          <span>Get Quote</span>
+          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 icon-flip"></i>
+        </a>
+      </div>
+
+      <!-- Mobile / Tablet Controls (< 1024px) -->
+      <div class="flex items-center lg:hidden">
+        <button id="mobileMenuToggle" class="p-2 rounded-lg border border-charcoal/20 dark:border-white/20 text-charcoal dark:text-white" aria-label="Open Navigation">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header Spacer for Fixed Navigation -->
+  <div class="h-[68px] sm:h-[72px] w-full shrink-0" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div id="mobileMenuBackdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobileMenuDrawer" class="invisible fixed top-0 right-0 rtl:right-auto rtl:left-0 w-80 max-w-[85%] h-full bg-ivory dark:bg-[#182029] z-50 shadow-2xl transform translate-x-full rtl:-translate-x-full transition-transform duration-300 ease-in-out p-6 flex flex-col justify-between overflow-y-auto">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-charcoal/10 dark:border-white/10">
+        <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
+          <img src="assets/logo.svg" alt="VISTRAL Logo" class="w-8 h-8">
+          <span class="font-display font-bold text-xl uppercase tracking-tight text-charcoal dark:text-white">VISTRAL</span>
+        </div>
+        <button id="mobileMenuClose" class="p-2 rounded-full hover:bg-stone-200 dark:hover:bg-stone-800 text-charcoal dark:text-white" aria-label="Close Navigation">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav class="mt-6 space-y-1">
+        <a href="index.html" class="block py-3 px-4 rounded-lg text-base font-medium text-bronze font-bold active transition-colors">Home 1</a>
+<a href="home-2.html" class="block py-3 px-4 rounded-lg text-base font-medium text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze transition-colors">Home 2</a>
+<a href="about.html" class="block py-3 px-4 rounded-lg text-base font-medium text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze transition-colors">About Us</a>
+<a href="products.html" class="block py-3 px-4 rounded-lg text-base font-medium text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze transition-colors">Products</a>
+<a href="gallery.html" class="block py-3 px-4 rounded-lg text-base font-medium text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze transition-colors">Gallery</a>
+<a href="services.html" class="block py-3 px-4 rounded-lg text-base font-medium text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze transition-colors">Services</a>
+<a href="contact.html" class="block py-3 px-4 rounded-lg text-base font-medium text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze transition-colors">Contact Us</a>
+
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-charcoal/10 dark:border-white/10 space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="text-xs uppercase tracking-wider text-charcoal/60 dark:text-stone-400 font-semibold">Direction / Theme</span>
+        <div class="flex items-center space-x-2 rtl:space-x-reverse">
+          <button class="rtl-toggle p-2 rounded-full border border-charcoal/20 dark:border-white/20 hover:border-bronze transition-all text-charcoal dark:text-stone-200 hover:text-bronze flex items-center justify-center" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Layout Direction">
+            <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/>
+            </svg>
+          </button>
+          <button class="theme-toggle p-2 rounded-full border border-charcoal/20 dark:border-white/20">
+            <i data-lucide="moon" class="theme-icon w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-2">
+        <a href="login.html" class="text-center py-2.5 rounded-lg border border-charcoal/20 dark:border-white/20 text-xs uppercase font-bold tracking-wider hover:border-bronze">
+          Login
+        </a>
+        <a href="signup.html" class="text-center py-2.5 rounded-lg bg-charcoal dark:bg-stone-800 text-white text-xs uppercase font-bold tracking-wider">
+          Sign Up
+        </a>
+      </div>
+      <a href="contact.html#measurement-booking" class="w-full bronze-gradient-btn py-3 rounded-lg text-center text-xs uppercase font-bold tracking-wider inline-flex items-center justify-center space-x-2 rtl:space-x-reverse">
+        <span>Get Quote</span>
+        <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 icon-flip"></i>
+      </a>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+    <!-- SECTION 1: PREMIUM HERO SECTION -->
+    <section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden py-20 px-4 sm:px-8">
+      <!-- Full-Width Background Architectural Image with Gradient Overlays -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85" 
+             alt="Modern luxury architectural estate with panoramic UPVC windows" 
+             class="w-full h-full object-cover object-center filter brightness-[0.82] contrast-[1.05] transition-transform duration-1000 scale-105">
+        <div class="absolute inset-0 bg-gradient-to-r from-charcoal/95 via-charcoal/70 to-transparent dark:from-[#0C1116]/95 dark:via-[#12181F]/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-charcoal/30"></div>
+      </div>
+
+      <!-- Hero Content Composition -->
+      <div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-8 space-y-6" data-aos="fade-right">
+          <!-- Floating Editorial Pill -->
+          <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white rtl:space-x-reverse">
+            <span class="w-2 h-2 rounded-full bg-bronze animate-ping"></span>
+            <span class="text-xs font-semibold tracking-widest uppercase text-bronze-200">German Engineering Standard DIN 18055</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.08]">
+            Precision Crafted Windows. <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-bronze-200 via-bronze to-bronze-400">Beautifully Designed</span> Living.
+          </h1>
+
+          <!-- Short Supporting Description -->
+          <p class="text-base sm:text-xl text-stone-200 max-w-2xl font-normal leading-relaxed">
+            Elevating modern architecture with bespoke multi-chamber UPVC profiles, multi-point acoustic sealing, and high-performance solar control glazing engineered for 50+ years of quiet serenity.
+          </p>
+
+          <!-- CTAs -->
+          <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="products.html" class="w-full sm:w-auto bronze-gradient-btn px-8 py-4 rounded-xl text-xs uppercase font-bold tracking-wider inline-flex items-center justify-center space-x-2 rtl:space-x-reverse group shadow-2xl">
+              <span>Explore Products</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform icon-flip"></i>
+            </a>
+            <a href="contact.html#measurement-booking" class="w-full sm:w-auto px-8 py-4 rounded-xl text-xs uppercase font-bold tracking-wider text-white bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 inline-flex items-center justify-center space-x-2 rtl:space-x-reverse transition-all">
+              <span>Get Free Quote</span>
+              <i data-lucide="clipboard-check" class="w-4 h-4 text-bronze"></i>
+            </a>
+          </div>
+
+          <!-- Floating Badges Feature Matrix -->
+          <div class="pt-8 grid grid-cols-3 gap-4 border-t border-white/15 max-w-xl text-white">
+            <div>
+              <span class="block font-display text-2xl sm:text-3xl font-bold text-bronze-200">0.78</span>
+              <span class="text-xs text-stone-300 font-medium tracking-wide">U-Value (W/m²K)</span>
+            </div>
+            <div>
+              <span class="block font-display text-2xl sm:text-3xl font-bold text-bronze-200">46 dB</span>
+              <span class="text-xs text-stone-300 font-medium tracking-wide">Acoustic Reduction</span>
+            </div>
+            <div>
+              <span class="block font-display text-2xl sm:text-3xl font-bold text-bronze-200">Class 4</span>
+              <span class="text-xs text-stone-300 font-medium tracking-wide">Air Permeability</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Architectural Detail Card (Editorial Layer) -->
+        <div class="lg:col-span-4 hidden lg:block" data-aos="fade-left">
+          <div class="relative glass-card p-6 rounded-2xl border border-white/20 shadow-2xl space-y-4 animate-float-slow">
+            <div class="flex items-center justify-between text-white">
+              <div class="flex items-center space-x-2 rtl:space-x-reverse">
+                <i data-lucide="shield-check" class="w-5 h-5 text-bronze"></i>
+                <span class="text-xs uppercase font-bold tracking-wider">Reinforced Core</span>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-bronze/30 text-[10px] text-bronze-100 font-mono font-bold">GALVANIZED STEEL</span>
+            </div>
+            <div class="rounded-xl overflow-hidden aspect-[4/3] relative">
+              <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=800&q=80" 
+                   alt="Precision mitred UPVC corner detail" 
+                   class="w-full h-full object-cover">
+              <div class="absolute bottom-2 left-2 right-2 bg-charcoal/80 backdrop-blur-md px-3 py-1.5 rounded text-[11px] text-white flex justify-between">
+                <span>Multi-Chambered Profile</span>
+                <span class="text-bronze font-bold">Series 88mm</span>
+              </div>
+            </div>
+            <p class="text-xs text-stone-200 leading-normal">
+              Fused seamless corners resistant to tropical humidity, salt air corrosion, and heavy driving rainstorms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: WHY CHOOSE OUR UPVC SOLUTIONS -->
+    <section class="py-24 px-4 sm:px-8 bg-ivory dark:bg-[#12181F] architectural-grid relative">
+      <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="flex flex-col md:items-center xl:flex-row xl:items-end justify-between mb-16 md:text-center xl:text-left gap-6 max-w-2xl md:max-w-3xl xl:max-w-7xl md:mx-auto xl:mx-0" data-aos="fade-up">
+          <div class="max-w-2xl">
+            <div class="flex items-center md:justify-center xl:justify-start space-x-2 rtl:space-x-reverse mb-3">
+              <span class="w-6 h-0.5 bg-bronze"></span>
+              <span class="text-xs uppercase font-bold tracking-widest text-bronze">Engineering Performance</span>
+            </div>
+            <h2 class="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-charcoal dark:text-white">
+              Why Architectural Masters Choose Our UPVC Solutions
+            </h2>
+          </div>
+          <p class="text-charcoal/70 dark:text-stone-300 text-sm max-w-md md:max-w-xl xl:max-w-md leading-relaxed">
+            Engineered through high-fusion compounding to outperform conventional aluminum and wood with superior thermal insulation, zero repainting, and decades of silent comfort.
+          </p>
+        </div>
+
+        <!-- Creative Non-Ordinary Layout: Asymmetrical Feature Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Item 1: Energy Efficiency (Hero Box) -->
+          <div class="md:col-span-2 lg:col-span-2 p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative overflow-hidden group shadow-lg" data-aos="fade-up">
+            <div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-bronze/10 filter blur-2xl group-hover:bg-bronze/20 transition-all"></div>
+            <div class="w-14 h-14 rounded-2xl bg-bronze/15 flex items-center justify-center text-bronze mb-6">
+              <i data-lucide="zap-off" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Thermal Barrier</span>
+            <h3 class="font-display text-2xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Ultra Energy Efficiency</h3>
+            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed max-w-md">
+              Multi-chambered insulating internal profiles eliminate thermal bridging. Slash HVAC cooling and heating expenses by up to 42% year-round with Low-E argon double and triple glazing.
+            </p>
+            <div class="mt-6 flex items-center space-x-4 text-xs font-semibold text-charcoal/80 dark:text-stone-200 rtl:space-x-reverse">
+              <span class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-bronze mr-1 rtl:ml-1"></i> Passivhaus Certified</span>
+              <span class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-bronze mr-1 rtl:ml-1"></i> Solar Heat Gain (SHGC 0.24)</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Sound Insulation -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-14 h-14 rounded-2xl bg-charcoal text-white dark:bg-stone-800 flex items-center justify-center mb-6">
+              <i data-lucide="volume-x" class="w-7 h-7 text-bronze"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Acoustic Shield</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Sound Insulation</h3>
+            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Dampens high-traffic decibels, highway drones, and aircraft noise by up to 45 dB with double EPDM compression gaskets.
+            </p>
+          </div>
+
+          <!-- Item 3: Weather Resistance -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-14 h-14 rounded-2xl bg-bronze/15 flex items-center justify-center text-bronze mb-6">
+              <i data-lucide="cloud-lightning" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Monsoon Proof</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Weather Resistance</h3>
+            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Tested to withstand 240 km/h cyclone gusts and driving torrential rain without a single droplet penetrating internal seals.
+            </p>
+          </div>
+
+          <!-- Item 4: Structural Durability -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-14 h-14 rounded-2xl bg-bronze/15 flex items-center justify-center text-bronze mb-6">
+              <i data-lucide="hammer" class="w-7 h-7"></i>
+            </div>
+            <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Reinforced Core</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Durability & Lifespan</h3>
+            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Resistant to yellowing, UV chalking, warping, termites, and corrosive coastal salt mist. Rated for 50+ years of operation.
+            </p>
+          </div>
+
+          <!-- Item 5: Low Maintenance (Wide Box) -->
+          <div class="md:col-span-2 lg:col-span-3 p-8 rounded-3xl bg-charcoal text-white dark:bg-[#182029] border border-bronze/20 relative overflow-hidden group shadow-xl flex flex-col md:flex-row items-center justify-between gap-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="space-y-3 max-w-xl">
+              <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Zero Maintenance Hassle</span>
+              <h3 class="font-display text-2xl font-bold text-white">Never Sand, Varnish, or Repaint Again</h3>
+              <p class="text-sm text-stone-300 leading-relaxed">
+                Our UV-stabilized German polymer formulations never peel or rust. A gentle wipe with warm soapy water restores their pristine factory sheen even after decades of desert heat or humid monsoon seasons.
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <a href="about.html#quality-standards" class="bronze-gradient-btn px-6 py-3 rounded-xl text-xs uppercase tracking-wider font-bold inline-flex items-center space-x-2 rtl:space-x-reverse">
+                <span>View Quality Audits</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 icon-flip"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FEATURED UPVC PRODUCTS -->
+    <section class="py-24 px-4 sm:px-8 bg-white dark:bg-[#182029] border-y border-charcoal/10 dark:border-white/10">
+      <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-xs uppercase font-bold tracking-widest text-bronze block mb-2">Architectural Portfolio</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-charcoal dark:text-white tracking-tight">
+            Featured UPVC Systems
+          </h2>
+          <p class="text-charcoal/70 dark:text-stone-300 text-sm mt-3">
+            Tailor-engineered casements, expansive sliders, and multi-leaf patio doors built to millimeter precision.
+          </p>
+        </div>
+
+        <!-- 6 Featured Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+          <!-- 1. Casement Windows -->
+          <div class="group rounded-2xl overflow-hidden border border-charcoal/10 dark:border-white/10 bg-ivory dark:bg-[#12181F] transition-all hover:shadow-2xl flex flex-col h-full" data-aos="fade-up">
+            <div class="img-zoom-wrapper aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" 
+                   alt="Modern Casement Windows in luxury residence" 
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-[10px] xl:text-[11px] font-mono uppercase tracking-wider text-bronze font-bold whitespace-nowrap">Side-Hung / Top-Hung</span>
+                  <span class="text-[11px] xl:text-xs text-charcoal/60 dark:text-stone-400 whitespace-nowrap">90° Opening</span>
+                </div>
+                <h3 class="font-display text-xl font-bold text-charcoal dark:text-white">Casement Windows</h3>
+                <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                  Maximum natural airflow and unobstructed panoramic views with heavy-duty friction stays and triple-seal perimeter gaskets.
+                </p>
+              </div>
+              <div class="pt-4 mt-auto border-t border-charcoal/10 dark:border-white/10 flex items-center justify-between">
+                <a href="products.html#casement-windows" class="text-xs uppercase font-bold text-bronze hover:text-bronze-600 inline-flex items-center space-x-1.5 rtl:space-x-reverse">
+                  <span>Explore Specs</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 icon-flip"></i>
+                </a>
+                <a href="contact.html?product=Casement+Windows" class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 hover:text-bronze">Enquire</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Sliding Windows -->
+          <div class="group rounded-2xl overflow-hidden border border-charcoal/10 dark:border-white/10 bg-ivory dark:bg-[#12181F] transition-all hover:shadow-2xl flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+            <div class="img-zoom-wrapper aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" 
+                   alt="Panoramic multi-track sliding windows" 
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-[10px] xl:text-[11px] font-mono uppercase tracking-wider text-bronze font-bold whitespace-nowrap">2, 3 & 4 Multi-Track</span>
+                  <span class="text-[11px] xl:text-xs text-charcoal/60 dark:text-stone-400 whitespace-nowrap">Silent Glide</span>
+                </div>
+                <h3 class="font-display text-xl font-bold text-charcoal dark:text-white">Sliding Windows</h3>
+                <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                  Precision stainless steel tandem rollers provide weightless, silent gliding across expansive architectural apertures.
+                </p>
+              </div>
+              <div class="pt-4 mt-auto border-t border-charcoal/10 dark:border-white/10 flex items-center justify-between">
+                <a href="products.html#sliding-windows" class="text-xs uppercase font-bold text-bronze hover:text-bronze-600 inline-flex items-center space-x-1.5 rtl:space-x-reverse">
+                  <span>Explore Specs</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 icon-flip"></i>
+                </a>
+                <a href="contact.html?product=Sliding+Windows" class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 hover:text-bronze">Enquire</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Tilt & Turn Windows -->
+          <div class="group rounded-2xl overflow-hidden border border-charcoal/10 dark:border-white/10 bg-ivory dark:bg-[#12181F] transition-all hover:shadow-2xl flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+            <div class="img-zoom-wrapper aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=800&q=80" 
+                   alt="German Dual-Action Tilt and Turn Windows" 
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-[10px] xl:text-[11px] font-mono uppercase tracking-wider text-bronze font-bold whitespace-nowrap">Dual Action System</span>
+                  <span class="text-[11px] xl:text-xs text-charcoal/60 dark:text-stone-400 whitespace-nowrap">Micro-Vent</span>
+                </div>
+                <h3 class="font-display text-xl font-bold text-charcoal dark:text-white">Tilt & Turn Windows</h3>
+                <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                  Versatile European hardware tilts from the top for secure draft-free ventilation or swings inwards for effortless interior cleaning.
+                </p>
+              </div>
+              <div class="pt-4 mt-auto border-t border-charcoal/10 dark:border-white/10 flex items-center justify-between">
+                <a href="products.html#tilt-turn-windows" class="text-xs uppercase font-bold text-bronze hover:text-bronze-600 inline-flex items-center space-x-1.5 rtl:space-x-reverse">
+                  <span>Explore Specs</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 icon-flip"></i>
+                </a>
+                <a href="contact.html?product=Tilt+and+Turn" class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 hover:text-bronze">Enquire</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Fixed Panoramic Windows -->
+          <div class="group rounded-2xl overflow-hidden border border-charcoal/10 dark:border-white/10 bg-ivory dark:bg-[#12181F] transition-all hover:shadow-2xl flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
+            <div class="img-zoom-wrapper aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" 
+                   alt="Fixed architectural picture windows" 
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-[10px] xl:text-[11px] font-mono uppercase tracking-wider text-bronze font-bold whitespace-nowrap">Non-Operable Glazing</span>
+                  <span class="text-[11px] xl:text-xs text-charcoal/60 dark:text-stone-400 whitespace-nowrap">Acoustic Class 5</span>
+                </div>
+                <h3 class="font-display text-xl font-bold text-charcoal dark:text-white">Fixed Panoramic Windows</h3>
+                <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                  Immaculate sightlines designed to frame dramatic landscapes, providing unmatched structural strength and zero air infiltration.
+                </p>
+              </div>
+              <div class="pt-4 mt-auto border-t border-charcoal/10 dark:border-white/10 flex items-center justify-between">
+                <a href="products.html#fixed-panoramic" class="text-xs uppercase font-bold text-bronze hover:text-bronze-600 inline-flex items-center space-x-1.5 rtl:space-x-reverse">
+                  <span>Explore Specs</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 icon-flip"></i>
+                </a>
+                <a href="contact.html?product=Fixed+Panoramic" class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 hover:text-bronze">Enquire</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Expansive Sliding Doors -->
+          <div class="group rounded-2xl overflow-hidden border border-charcoal/10 dark:border-white/10 bg-ivory dark:bg-[#12181F] transition-all hover:shadow-2xl flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
+            <div class="img-zoom-wrapper aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" 
+                   alt="Modern sliding glass patio doors" 
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-[10px] xl:text-[11px] font-mono uppercase tracking-wider text-bronze font-bold whitespace-nowrap">Flush Threshold</span>
+                  <span class="text-[11px] xl:text-xs text-charcoal/60 dark:text-stone-400 whitespace-nowrap">Multi-Locking</span>
+                </div>
+                <h3 class="font-display text-xl font-bold text-charcoal dark:text-white">Sliding Patio Doors</h3>
+                <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                  Seamless indoor-outdoor transitions with flush zero-barrier floor sills, reinforced steel interlocks, and security anti-lift blocks.
+                </p>
+              </div>
+              <div class="pt-4 mt-auto border-t border-charcoal/10 dark:border-white/10 flex items-center justify-between">
+                <a href="products.html#sliding-doors" class="text-xs uppercase font-bold text-bronze hover:text-bronze-600 inline-flex items-center space-x-1.5 rtl:space-x-reverse">
+                  <span>Explore Specs</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 icon-flip"></i>
+                </a>
+                <a href="contact.html?product=Sliding+Doors" class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 hover:text-bronze">Enquire</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. French Balcony Doors -->
+          <div class="group rounded-2xl overflow-hidden border border-charcoal/10 dark:border-white/10 bg-ivory dark:bg-[#12181F] transition-all hover:shadow-2xl flex flex-col h-full" data-aos="fade-up" data-aos-delay="500">
+            <div class="img-zoom-wrapper aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" 
+                   alt="Elegant French UPVC patio doors" 
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-[10px] xl:text-[11px] font-mono uppercase tracking-wider text-bronze font-bold whitespace-nowrap">Double-Leaf System</span>
+                  <span class="text-[11px] xl:text-xs text-charcoal/60 dark:text-stone-400 whitespace-nowrap">Classic Grandeur</span>
+                </div>
+                <h3 class="font-display text-xl font-bold text-charcoal dark:text-white">French Architectural Doors</h3>
+                <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                  Timeless dual-leaf symmetrical opening with floating mullion for a wide, unencumbered entrance onto terraces and courtyards.
+                </p>
+              </div>
+              <div class="pt-4 mt-auto border-t border-charcoal/10 dark:border-white/10 flex items-center justify-between">
+                <a href="products.html#french-doors" class="text-xs uppercase font-bold text-bronze hover:text-bronze-600 inline-flex items-center space-x-1.5 rtl:space-x-reverse">
+                  <span>Explore Specs</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 icon-flip"></i>
+                </a>
+                <a href="contact.html?product=French+Doors" class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 hover:text-bronze">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="products.html" class="inline-flex items-center space-x-2 bronze-gradient-btn px-8 py-3.5 rounded-xl text-xs uppercase font-bold tracking-wider rtl:space-x-reverse">
+            <span>Browse Full Product Catalogue</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 icon-flip"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: INNOVATION & FABRICATION EXCELLENCE -->
+    <section class="py-24 px-4 sm:px-8 bg-ivory dark:bg-[#12181F] overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Text Narrative -->
+          <div class="lg:col-span-6 space-y-6" data-aos="fade-right">
+            <div class="flex items-center space-x-2 rtl:space-x-reverse">
+              <span class="w-6 h-0.5 bg-bronze"></span>
+              <span class="text-xs uppercase font-bold tracking-widest text-bronze">Fabrication Facility</span>
+            </div>
+            <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-charcoal dark:text-white tracking-tight leading-tight">
+              German CNC Precision. <br>
+              Seamless Corner Fusion.
+            </h2>
+            <p class="text-sm sm:text-base text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Every VISTRAL system is precision-machined in our 75,000 sq.ft state-of-the-art facility utilizing 5-axis automated profile cutters, robotic 4-point hot plate corner welders, and computerized CNC deburring centers.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start space-x-4 rtl:space-x-reverse">
+                <div class="w-10 h-10 rounded-xl bg-bronze/15 text-bronze flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="cpu" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-base text-charcoal dark:text-white">Computerized Tolerances (±0.2mm)</h4>
+                  <p class="text-xs text-charcoal/70 dark:text-stone-300 mt-1">Laser guided digital measurement ensuring zero frame distortion during thermal fluctuations.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4 rtl:space-x-reverse">
+                <div class="w-10 h-10 rounded-xl bg-bronze/15 text-bronze flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="shield" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-base text-charcoal dark:text-white">Integrated Galvanized Steel Core</h4>
+                  <p class="text-xs text-charcoal/70 dark:text-stone-300 mt-1">2.0mm thick zinc-passivated reinforcement running continuously throughout sash and outer frame.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4 rtl:space-x-reverse">
+                <div class="w-10 h-10 rounded-xl bg-bronze/15 text-bronze flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="layers" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-base text-charcoal dark:text-white">Dual-Seal EPDM Weather Stripping</h4>
+                  <p class="text-xs text-charcoal/70 dark:text-stone-300 mt-1">Ethylene propylene diene monomer gaskets prevent moisture seepage and withstand 40°C to +80°C extremes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="services.html#custom-fabrication" class="inline-flex items-center space-x-2 text-xs uppercase font-bold tracking-wider text-bronze hover:text-bronze-700 rtl:space-x-reverse">
+                <span>Discover Our Manufacturing Workflow</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 icon-flip"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Creative Overlapping Images Composition -->
+          <div class="lg:col-span-6 relative" data-aos="fade-left">
+            <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#182029] max-w-[90%]">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80" 
+                   alt="Robotic precision CNC milling of UPVC profiles" 
+                   class="w-full h-auto object-cover">
+            </div>
+
+            <div class="absolute -bottom-8 -right-4 w-2/3 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#182029] z-20 hidden sm:block">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" 
+                   alt="Automated 4-point thermal weld fusion" 
+                   class="w-full h-auto object-cover">
+            </div>
+
+            <!-- Floating Metric Badge -->
+            <div class="absolute top-8 -left-6 z-30 bg-charcoal text-white px-5 py-3 rounded-2xl shadow-xl border border-bronze/30 hidden sm:flex items-center space-x-3 rtl:space-x-reverse">
+              <div class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></div>
+              <div>
+                <span class="block text-xs uppercase text-stone-400 font-mono">Factory Output</span>
+                <span class="text-sm font-bold font-display text-bronze-200">12,000+ Sashes / Month</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: OUR SIGNATURE PROJECTS -->
+    <section class="py-24 px-4 sm:px-8 bg-white dark:bg-[#182029] border-t border-charcoal/10 dark:border-white/10">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6" data-aos="fade-up">
+          <div>
+            <span class="text-xs uppercase font-bold tracking-widest text-bronze block mb-2">Architectural Showcase</span>
+            <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-charcoal dark:text-white tracking-tight">
+              Our Signature Projects
+            </h2>
+          </div>
+          <a href="gallery.html" class="inline-flex items-center space-x-2 text-xs uppercase font-bold tracking-wider text-bronze hover:underline rtl:space-x-reverse">
+            <span>View All Architectural Case Studies</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 icon-flip"></i>
+          </a>
+        </div>
+
+        <!-- 3 Equal-Sized Signature Project Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
+          <!-- Project 1 -->
+          <div class="rounded-3xl overflow-hidden relative group shadow-xl flex flex-col justify-end min-h-[460px] p-8 border border-charcoal/10 dark:border-white/10" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80" 
+                 alt="The Glass Pavilion Luxury Estate UPVC Fenestration" 
+                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/45 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+            
+            <div class="relative z-10 space-y-3 text-white">
+              <span class="inline-block px-3 py-1 rounded-full bg-bronze text-white text-[10px] font-mono uppercase font-bold tracking-wider">
+                Residential Estate
+              </span>
+              <h3 class="font-display text-xl sm:text-2xl font-bold leading-snug">The Glass Pavilion</h3>
+              <p class="text-xs text-stone-300 leading-relaxed">
+                Custom triple-glazed sliding patio systems spanning 14m width with motorized insect screens and acoustic noise reduction.
+              </p>
+              <div class="pt-3 border-t border-white/15 flex items-center justify-between text-[11px] text-bronze-200 font-mono">
+                <span>Beverly Hills, CA</span>
+                <span>Completed 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="rounded-3xl overflow-hidden relative group shadow-xl flex flex-col justify-end min-h-[460px] p-8 border border-charcoal/10 dark:border-white/10" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1000&q=80" 
+                 alt="Skyline Commercial Centre UPVC Glazed Facade" 
+                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/45 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+            
+            <div class="relative z-10 space-y-3 text-white">
+              <span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-[10px] font-mono uppercase font-bold tracking-wider">
+                Commercial Tower
+              </span>
+              <h3 class="font-display text-xl sm:text-2xl font-bold leading-snug">Skyline Headquarters</h3>
+              <p class="text-xs text-stone-300 leading-relaxed">
+                Continuous thermal-break ribbon casement windows with acoustic Class 5 sound isolation and solar control glazing.
+              </p>
+              <div class="pt-3 border-t border-white/15 flex items-center justify-between text-[11px] text-bronze-200 font-mono">
+                <span>Frankfurt, Germany</span>
+                <span>Completed 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto xl:col-span-1 xl:w-full xl:mx-0 rounded-3xl overflow-hidden relative group shadow-xl flex flex-col justify-end min-h-[460px] p-8 border border-charcoal/10 dark:border-white/10" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1000&q=80" 
+                 alt="Nordic Minimalist Retreat Fixed Corner Windows" 
+                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/45 to-transparent opacity-90 group-hover:opacity-95 transition-opacity"></div>
+            
+            <div class="relative z-10 space-y-3 text-white">
+              <span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-[10px] font-mono uppercase font-bold tracking-wider">
+                Modern Villa
+              </span>
+              <h3 class="font-display text-xl sm:text-2xl font-bold leading-snug">Nordic Solarium</h3>
+              <p class="text-xs text-stone-300 leading-relaxed">
+                Frameless corner butt-joint glazing with heavy reinforced UPVC perimeter and multi-point security deadbolts.
+              </p>
+              <div class="pt-3 border-t border-white/15 flex items-center justify-between text-[11px] text-bronze-200 font-mono">
+                <span>Oslo, Norway</span>
+                <span>Completed 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: OUR INSTALLATION PROCESS -->
+    <section class="py-24 px-4 sm:px-8 bg-ivory dark:bg-[#12181F] architectural-grid">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-xs uppercase font-bold tracking-widest text-bronze block mb-2">Turnkey Execution</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-charcoal dark:text-white tracking-tight">
+            Our 6-Step Installation Process
+          </h2>
+          <p class="text-charcoal/70 dark:text-stone-300 text-sm mt-3">
+            From laser scan to white-glove final inspection, every step is rigorously supervised by certified fenestration engineers.
+          </p>
+        </div>
+
+        <!-- Creative Process Timeline -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+          <!-- Step 1 -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group hover:shadow-xl transition-all" data-aos="fade-up">
+            <span class="text-4xl font-display font-extrabold text-bronze/30 group-hover:text-bronze transition-colors">01</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-2 text-charcoal dark:text-white min-h-[3.25rem] sm:min-h-[3.5rem] leading-snug">Architectural<br> Consultation</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              In-depth assessment of sun exposure, wind pressure zones, sound pollution, and aesthetic sightlines tailored to your blueprints.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+            <span class="text-4xl font-display font-extrabold text-bronze/30 group-hover:text-bronze transition-colors">02</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-2 text-charcoal dark:text-white min-h-[3.25rem] sm:min-h-[3.5rem] leading-snug">Precision Laser<br> Measurement</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              3D digital site surveys capture opening diagonals and wall settlement to ensure airtight tolerance before production.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+            <span class="text-4xl font-display font-extrabold text-bronze/30 group-hover:text-bronze transition-colors">03</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-2 text-charcoal dark:text-white min-h-[3.25rem] sm:min-h-[3.5rem] leading-snug">System Design &<br> Glass Curation</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Selection of multi-chamber profiles, profile colors (Anthracite Grey, Golden Oak), and double/triple glazing packages.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
+            <span class="text-4xl font-display font-extrabold text-bronze/30 group-hover:text-bronze transition-colors">04</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-2 text-charcoal dark:text-white min-h-[3.25rem] sm:min-h-[3.5rem] leading-snug">Computerized<br> Fabrication</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Automated 5-axis cutting, zinc reinforcement insertion, robotic hot-fusion corners, and pre-hanging hardware assembly.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="400">
+            <span class="text-4xl font-display font-extrabold text-bronze/30 group-hover:text-bronze transition-colors">05</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-2 text-charcoal dark:text-white min-h-[3.25rem] sm:min-h-[3.5rem] leading-snug">Certified In-House<br> Installation</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Anchored with expansion fasteners, non-expanding polyurethane foam insulation, and structural silicone weather seals.
+            </p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="500">
+            <span class="text-4xl font-display font-extrabold text-bronze/30 group-hover:text-bronze transition-colors">06</span>
+            <h3 class="font-display text-xl font-bold mt-2 mb-2 text-charcoal dark:text-white min-h-[3.25rem] sm:min-h-[3.5rem] leading-snug">Acoustic & Water<br> Quality Audit</h3>
+            <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
+              Pressure nozzle water spray test, multi-point locking alignment check, and handover of your 20-Year Warranty Certificate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: STRONG CONVERSION CTA -->
+    <section class="relative py-28 px-4 sm:px-8 overflow-hidden bg-charcoal text-white">
+      <!-- Background Visual with Texture Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=2000&q=85" 
+             alt="Architectural modern villa illuminated at twilight with UPVC windows" 
+             class="w-full h-full object-cover filter brightness-[0.35]">
+        <div class="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/90 to-charcoal/60"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto text-center space-y-8" data-aos="zoom-in">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-bronze/20 border border-bronze/40 text-bronze-200 text-xs uppercase tracking-widest font-semibold rtl:space-x-reverse">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          <span>Engineered For Distinction</span>
+        </div>
+
+        <h2 class="font-display text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-tight">
+          Upgrade Your Space with <span class="text-transparent bg-clip-text bg-gradient-to-r from-bronze-200 via-bronze to-bronze-400">Smarter Windows</span>.
+        </h2>
+
+        <p class="text-base sm:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
+          Request a complimentary architectural site measurement, laser structural audit, and tailored quotation from our senior fenestration consultants.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 pt-4">
+          <a href="contact.html#measurement-booking" class="w-full sm:w-auto bronze-gradient-btn px-8 py-4 rounded-xl text-xs uppercase font-bold tracking-wider inline-flex items-center justify-center space-x-2 rtl:space-x-reverse shadow-2xl">
+            <span>Book Free Site Measurement</span>
+            <i data-lucide="calendar-check" class="w-4 h-4"></i>
+          </a>
+          <a href="contact.html" class="w-full sm:w-auto px-8 py-4 rounded-xl text-xs uppercase font-bold tracking-wider bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white inline-flex items-center justify-center space-x-2 rtl:space-x-reverse transition-all">
+            <span>Speak With an Engineer</span>
+            <i data-lucide="phone" class="w-4 h-4 text-bronze"></i>
+          </a>
+        </div>
+
+        <div class="pt-8 flex flex-wrap items-center justify-center gap-8 text-xs text-stone-400 border-t border-white/10 max-w-2xl mx-auto">
+          <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-bronze mr-1.5 rtl:ml-1.5"></i> Zero Obligation Estimate</span>
+          <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-bronze mr-1.5 rtl:ml-1.5"></i> 20-Year Profile Warranty</span>
+          <span class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-bronze mr-1.5 rtl:ml-1.5"></i> Factory Direct Pricing</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Premium Footer -->
+  <footer class="bg-charcoal text-white pt-16 pb-12 border-t border-bronze/20 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <!-- Col 1: Brand & Bio -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="assets/logo.svg" alt="VISTRAL Logo" class="w-9 h-9">
+            <div>
+              <span class="font-display font-bold text-2xl tracking-tight text-white uppercase leading-none">VISTRAL</span>
+              <span class="block text-[10px] tracking-[0.25em] text-bronze uppercase font-semibold">UPVC Architectural Systems</span>
+            </div>
+          </div>
+          <p class="text-stone-300 text-sm leading-relaxed max-w-sm">
+            Engineering luxury architectural glazing, ultra-energy-efficient UPVC window frames, and precision sliding patio doors. Certified German profiles engineered for tropical resilience, acoustic silence, and lifelong architectural elegance.
+          </p>
+          <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
+            <!-- LinkedIn (Official #0A66C2) -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn-linkedin w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-stone-300" aria-label="LinkedIn">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.67 1.67 0 1 0 0-3.34 1.67 1.67 0 0 0 0 3.34m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+              </svg>
+            </a>
+            <!-- Instagram (Official Gradient) -->
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn-instagram w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-stone-300" aria-label="Instagram">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <!-- YouTube (Official #FF0000) -->
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn-youtube w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-stone-300" aria-label="YouTube">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <!-- Pinterest (Official #E60023) -->
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-btn-pinterest w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-stone-300" aria-label="Pinterest">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.94-.12-2.39.02-3.42.14-.99.96-4.08.96-4.08s-.24-.49-.24-1.22c0-1.14.66-2 1.49-2 .7 0 1.04.53 1.04 1.16 0 .71-.45 1.77-.69 2.75-.2 8.35.41 1.51 1.22 1.51 1.47 0 2.6-1.55 2.6-3.79 0-1.98-1.42-3.36-3.46-3.36-2.52 0-4 1.89-4 3.85 0 .76.29 1.58.66 2.03.07.09.08.17.06.26-.07.29-.23.94-.26 1.07-.04.18-.15.22-.34.13-1.25-.58-2.03-2.4-2.03-3.87 0-3.15 2.29-6.04 6.6-6.04 3.46 0 6.16 2.47 6.16 5.77 0 3.44-2.17 6.21-5.18 6.21-1.01 0-1.97-.53-2.29-1.15l-.62 2.38c-.23.87-.84 1.96-1.25 2.63A12 12 0 1 0 12 0z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Window Solutions -->
+        <div class="space-y-3">
+          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze">UPVC Windows</h4>
+          <ul class="space-y-2 text-sm text-stone-300">
+            <li><a href="products.html#casement-windows" class="hover:text-bronze transition-colors">Casement Windows</a></li>
+            <li><a href="products.html#sliding-windows" class="hover:text-bronze transition-colors">Sliding Windows</a></li>
+            <li><a href="products.html#tilt-turn-windows" class="hover:text-bronze transition-colors">Tilt & Turn Systems</a></li>
+            <li><a href="products.html#fixed-panoramic" class="hover:text-bronze transition-colors">Fixed Panoramic</a></li>
+            <li><a href="products.html#bay-windows" class="hover:text-bronze transition-colors">Bay & Combination</a></li>
+            <li><a href="products.html#arch-windows" class="hover:text-bronze transition-colors">Architectural Arches</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Door Systems -->
+        <div class="space-y-3">
+          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze">UPVC Doors</h4>
+          <ul class="space-y-2 text-sm text-stone-300">
+            <li><a href="products.html#sliding-doors" class="hover:text-bronze transition-colors">Panoramic Sliding Doors</a></li>
+            <li><a href="products.html#french-doors" class="hover:text-bronze transition-colors">Classic French Doors</a></li>
+            <li><a href="products.html#folding-bifold" class="hover:text-bronze transition-colors">Folding Bi-Fold Systems</a></li>
+            <li><a href="products.html#lift-slide" class="hover:text-bronze transition-colors">Heavy Lift & Slide</a></li>
+            <li><a href="products.html#entrance-doors" class="hover:text-bronze transition-colors">High-Security Entrance</a></li>
+            <li><a href="products.html#balcony-doors" class="hover:text-bronze transition-colors">Balcony & Terrace Doors</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Direct Contact -->
+        <div class="space-y-3">
+          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze">Architectural Gazette</h4>
+          <p class="text-xs text-stone-300 leading-relaxed">
+            Receive technical whitepapers, acoustic glazing updates, and new profile releases directly in your inbox.
+          </p>
+          <form class="newsletter-form flex flex-col space-y-2">
+            <div class="relative">
+              <input type="email" required placeholder="Enter your work email" class="w-full bg-white/5 border border-white/15 focus:border-bronze rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-stone-400 focus:outline-none">
+            </div>
+            <button type="submit" class="bronze-gradient-btn py-2 px-4 rounded-lg text-xs uppercase font-bold tracking-wider text-center">
+              Subscribe
+            </button>
+          </form>
+          <div class="pt-2 text-xs text-stone-400 space-y-1">
+            <div class="flex items-center space-x-2 rtl:space-x-reverse">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5 text-bronze"></i>
+              <span>+1 (800) 482-7832 (Toll Free)</span>
+            </div>
+            <div class="flex items-center space-x-2 rtl:space-x-reverse">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-bronze"></i>
+              <span>architects@vistralsystems.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-stone-400 gap-4">
+        <p>&copy; 2026 VISTRAL Architectural UPVC Systems Inc. All rights reserved.</p>
+        <div class="flex items-center space-x-5 rtl:space-x-reverse">
+          <a href="about.html" class="hover:text-bronze transition-colors">Quality Standards</a>
+          <a href="contact.html" class="hover:text-bronze transition-colors">Factory Audits</a>
+          <a href="login.html" class="hover:text-bronze transition-colors">Partner Portal</a>
+          <a href="contact.html#faq" class="hover:text-bronze transition-colors">Warranty & FAQ</a>
+          
+          <!-- Back to Top Arrow in Right Corner -->
+          <button type="button" class="back-to-top-btn w-9 h-9 rounded-full bg-white/10 hover:bg-bronze border border-white/20 text-stone-200 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(182,139,88,0.4)] ml-2 rtl:ml-0 rtl:mr-2 group cursor-pointer" title="Back to Top" aria-label="Back to Top">
+            <i data-lucide="arrow-up" class="w-4 h-4 transform group-hover:-translate-y-0.5 transition-transform"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Container -->
+  <div id="lightboxModal" class="hidden fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
+    <button id="lightboxClose" class="absolute top-6 right-6 rtl:right-auto rtl:left-6 text-white hover:text-bronze p-2" aria-label="Close Lightbox">
+      <i data-lucide="x" class="w-8 h-8"></i>
+    </button>
+    <button id="lightboxPrev" class="absolute left-6 rtl:left-auto rtl:right-6 top-1/2 -translate-y-1/2 text-white hover:text-bronze p-3 bg-white/10 rounded-full" aria-label="Previous Image">
+      <i data-lucide="chevron-left" class="w-6 h-6 icon-flip"></i>
+    </button>
+    <button id="lightboxNext" class="absolute right-6 rtl:right-auto rtl:left-6 top-1/2 -translate-y-1/2 text-white hover:text-bronze p-3 bg-white/10 rounded-full" aria-label="Next Image">
+      <i data-lucide="chevron-right" class="w-6 h-6 icon-flip"></i>
+    </button>
+    <div class="max-w-4xl max-h-[85vh] flex flex-col items-center">
+      <img id="lightboxImg" src="" alt="Project Preview" class="max-h-[75vh] w-auto object-contain rounded-lg shadow-2xl">
+      <div class="mt-4 text-center">
+        <span id="lightboxCategory" class="text-xs uppercase tracking-widest text-bronze font-bold"></span>
+        <h3 id="lightboxTitle" class="text-lg font-bold text-white font-display mt-0.5"></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
