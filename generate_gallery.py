@@ -51,7 +51,7 @@ def build_gallery():
     </section>
 
     <!-- SECTION 2: RESIDENTIAL UPVC WINDOW INSTALLATION PROJECTS -->
-    <section class="py-20 px-4 sm:px-8 bg-ivory dark:bg-[#12181F] architectural-grid">
+    <section class="gallery-tier-section py-20 px-4 sm:px-8 bg-ivory dark:bg-[#12181F] architectural-grid transition-all duration-300">
       <div class="max-w-7xl mx-auto space-y-12">
         <div class="flex items-center justify-between border-b border-charcoal/10 dark:border-white/10 pb-6" data-aos="fade-up">
           <div>
@@ -69,12 +69,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80" 
                  alt="Bel-Air Modernist Villa UPVC Casements" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Residential &bull; Windows</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Bel-Air Villa</h3>
-              <p class="text-xs text-stone-300 mt-1">Series 88mm triple-glazed acoustic casements with concealed friction hinges.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Residential &bull; Windows</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Bel-Air Villa</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">Series 88mm triple-glazed acoustic casements with concealed friction hinges.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>
@@ -85,12 +85,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80" 
                  alt="Aspen Solarium Chalet Fixed Picture Windows" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Residential &bull; Windows</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Aspen Solarium</h3>
-              <p class="text-xs text-stone-300 mt-1">Multi-pane fixed picture glazing engineered to withstand 180cm heavy snow load.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Residential &bull; Windows</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Aspen Solarium</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">Multi-pane fixed picture glazing engineered to withstand 180cm heavy snow load.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>
@@ -101,12 +101,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80" 
                  alt="Pacific Horizon Luxury French Patio Doors" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Residential &bull; Doors</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Pacific Residence</h3>
-              <p class="text-xs text-stone-300 mt-1">Double-leaf UPVC French terrace doors with magnetic multi-point deadbolts.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Residential &bull; Doors</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Pacific Residence</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">Double-leaf UPVC French terrace doors with magnetic multi-point deadbolts.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>
@@ -116,7 +116,7 @@ def build_gallery():
     </section>
 
     <!-- SECTION 3: COMMERCIAL BUILDING WINDOW AND DOOR INSTALLATIONS -->
-    <section class="py-20 px-4 sm:px-8 bg-white dark:bg-[#182029] border-y border-charcoal/10 dark:border-white/10">
+    <section class="gallery-tier-section py-20 px-4 sm:px-8 bg-white dark:bg-[#182029] border-y border-charcoal/10 dark:border-white/10 transition-all duration-300">
       <div class="max-w-7xl mx-auto space-y-12">
         <div class="flex items-center justify-between border-b border-charcoal/10 dark:border-white/10 pb-6" data-aos="fade-up">
           <div>
@@ -134,12 +134,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=900&q=80" 
                  alt="Vanguard Innovation Center Corporate Facade" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Commercial &bull; Windows</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Vanguard Center</h3>
-              <p class="text-xs text-stone-300 mt-1">Continuous ribbon fenestration with acoustic class 5 traffic isolation.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Commercial &bull; Windows</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Vanguard Center</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">Continuous ribbon fenestration with acoustic class 5 traffic isolation.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>
@@ -150,12 +150,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=900&q=80" 
                  alt="Stuttgart Financial Plaza Glazed Entrance" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Commercial &bull; Doors</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Stuttgart Plaza</h3>
-              <p class="text-xs text-stone-300 mt-1">High-traffic commercial automatic sliding entrance with heavy steel box reinforcement.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Commercial &bull; Doors</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Stuttgart Plaza</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">High-traffic commercial automatic sliding entrance with heavy steel box reinforcement.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>
@@ -166,12 +166,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=900&q=80" 
                  alt="Zurich Bio-Tech Research Labs" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Commercial &bull; Windows</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Zurich Bio-Tech Labs</h3>
-              <p class="text-xs text-stone-300 mt-1">Hermetically sealed clean-room UPVC casement windows with hospital-grade antimicrobial gaskets.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Commercial &bull; Windows</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Zurich Bio-Tech Labs</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">Hermetically sealed clean-room UPVC casement windows with hospital-grade antimicrobial gaskets.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>
@@ -181,7 +181,7 @@ def build_gallery():
     </section>
 
     <!-- SECTION 4: MODERN INTERIOR AND EXTERIOR UPVC DESIGN SHOWCASE -->
-    <section class="py-20 px-4 sm:px-8 bg-ivory dark:bg-[#12181F]">
+    <section class="gallery-tier-section py-20 px-4 sm:px-8 bg-ivory dark:bg-[#12181F] transition-all duration-300">
       <div class="max-w-7xl mx-auto space-y-12">
         <div class="flex items-center justify-between border-b border-charcoal/10 dark:border-white/10 pb-6" data-aos="fade-up">
           <div>
@@ -199,12 +199,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" 
                  alt="Minimalist living salon with framed garden window" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Interior &bull; Windows</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Scandinavian Salon</h3>
-              <p class="text-xs text-stone-300 mt-1">Matte White UPVC picture window framing private courtyard greenery.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Interior &bull; Windows</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Scandinavian Salon</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">Matte White UPVC picture window framing private courtyard greenery.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>
@@ -215,12 +215,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=80" 
                  alt="Kitchen patio access with sliding glass door" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Interior &bull; Doors</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Kitchen Solarium</h3>
-              <p class="text-xs text-stone-300 mt-1">Zero-threshold sliding pocket door seamlessly hidden inside wall cavity.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Interior &bull; Doors</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Kitchen Solarium</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">Zero-threshold sliding pocket door seamlessly hidden inside wall cavity.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>
@@ -231,12 +231,12 @@ def build_gallery():
             <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=900&q=80" 
                  alt="Master suite architectural corner glazing" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold">Interior &bull; Windows</span>
-              <h3 class="gallery-title font-display text-xl font-bold">Panoramic Suite</h3>
-              <p class="text-xs text-stone-300 mt-1">Concealed-profile butt joint corner glazing with micro-ventilation top-hung sashes.</p>
-              <div class="mt-3 inline-flex items-center space-x-1 text-xs text-bronze-200 font-bold rtl:space-x-reverse">
-                <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/35 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-bronze/25 text-bronze-200 border border-bronze/40 text-[10px] font-mono uppercase font-bold tracking-wider w-max mb-1.5 shadow-sm">Interior &bull; Windows</span>
+              <h3 class="gallery-title font-display text-xl font-extrabold text-white tracking-tight drop-shadow-md">Panoramic Suite</h3>
+              <p class="text-xs text-stone-200 mt-1.5 font-medium leading-relaxed drop-shadow-sm">Concealed-profile butt joint corner glazing with micro-ventilation top-hung sashes.</p>
+              <div class="mt-3.5 inline-flex items-center space-x-1.5 text-xs text-bronze-300 font-bold rtl:space-x-reverse group-hover:text-bronze-200 transition-colors">
+                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-bronze-300"></i>
                 <span>Click to Expand</span>
               </div>
             </div>

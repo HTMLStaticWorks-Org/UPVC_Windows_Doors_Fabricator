@@ -37,13 +37,13 @@ def build_about():
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <!-- Editorial Overlapping Images -->
-          <div class="lg:col-span-6 relative" data-aos="fade-right">
-            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#182029] aspect-[4/3] max-w-[88%]">
+          <div class="lg:col-span-6 relative pb-6 sm:pb-8 mb-6 sm:mb-8 lg:mb-0" data-aos="fade-right">
+            <div class="rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl border-2 sm:border-4 border-white dark:border-[#182029] aspect-[4/3] w-[82%] sm:max-w-[88%]">
               <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80" 
                    alt="VISTRAL precision design studio" 
                    class="w-full h-full object-cover">
             </div>
-            <div class="absolute -bottom-8 -right-4 w-3/5 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#182029] hidden sm:block">
+            <div class="absolute bottom-2 right-0 sm:-bottom-8 sm:-right-4 w-[55%] sm:w-3/5 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl border-2 sm:border-4 border-white dark:border-[#182029] z-20 block aspect-[4/3]">
               <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80" 
                    alt="Architectural profile showroom" 
                    class="w-full h-full object-cover">

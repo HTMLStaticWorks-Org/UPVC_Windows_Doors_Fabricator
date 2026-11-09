@@ -150,24 +150,24 @@ def build_contact():
 
         <form id="contactForm" class="p-8 sm:p-12 rounded-3xl bg-ivory dark:bg-[#12181F] border border-charcoal/10 dark:border-white/10 shadow-xl space-y-6" data-aos="fade-up">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
+            <div class="flex flex-col justify-end">
               <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Your Name *</label>
-              <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+              <input type="text" required placeholder="John Doe" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
-            <div>
+            <div class="flex flex-col justify-end">
               <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Email Address *</label>
-              <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+              <input type="email" required placeholder="john@example.com" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
+            <div class="flex flex-col justify-end">
               <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Phone Number</label>
-              <input type="tel" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+              <input type="tel" placeholder="+1 (555) 000-0000" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
-            <div>
+            <div class="flex flex-col justify-end">
               <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">Subject / Inquiry Nature</label>
-              <select class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+              <select class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-white dark:bg-[#182029] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze cursor-pointer">
                 <option>Product Specifications & Engineering</option>
                 <option>Architectural Partnership Inquiry</option>
                 <option>Dealer & Distributor Application</option>
@@ -212,30 +212,30 @@ def build_contact():
         <form id="measurementForm" class="p-8 sm:p-14 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-2xl space-y-8" data-aos="fade-up">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- 1. Full Name -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">1. Full Name *</label>
-              <input type="text" required placeholder="Alex Mercer" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">1. Full Name *</label>
+              <input type="text" required placeholder="Alex Mercer" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
 
             <!-- 2. Phone Number -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">2. Phone Number *</label>
-              <input type="tel" required placeholder="+1 (555) 234-5678" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">2. Phone Number *</label>
+              <input type="tel" required placeholder="+1 (555) 234-5678" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
 
             <!-- 3. Email Address -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">3. Email Address *</label>
-              <input type="email" required placeholder="alex@mercer.com" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">3. Email Address *</label>
+              <input type="email" required placeholder="alex@mercer.com" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- 4. Property Type -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">4. Property Type *</label>
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">4. Property Type *</label>
               <div class="relative">
-                <select required class="w-full appearance-none px-4 py-3 pr-10 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze cursor-pointer">
+                <select required class="w-full h-12 appearance-none px-4 pr-10 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze cursor-pointer">
                   <option value="">Select Property Type</option>
                   <option value="Residential">Residential Villa / Apartment</option>
                   <option value="Commercial">Commercial Building / Mall</option>
@@ -247,10 +247,10 @@ def build_contact():
             </div>
 
             <!-- 5. Required Product -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">5. Required Product *</label>
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">5. Required Product *</label>
               <div class="relative">
-                <select required class="w-full appearance-none px-4 py-3 pr-10 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze cursor-pointer">
+                <select required class="w-full h-12 appearance-none px-4 pr-10 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze cursor-pointer">
                   <option value="">Select Category</option>
                   <option value="Windows">UPVC Windows Only</option>
                   <option value="Doors">UPVC Doors Only</option>
@@ -261,29 +261,29 @@ def build_contact():
             </div>
 
             <!-- 6. Number of Windows / Doors -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">6. Number of Units *</label>
-              <input type="number" min="1" max="500" required placeholder="e.g. 14 Units" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">6. Number of Units *</label>
+              <input type="number" min="1" max="500" required placeholder="e.g. 14 Units" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- 7. Preferred Measurement Date -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">7. Preferred Date *</label>
-              <input type="date" required class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">7. Preferred Date *</label>
+              <input type="date" required class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
 
             <!-- 8. Property Location -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">8. Property Location / Address *</label>
-              <input type="text" required placeholder="City, District, Landmark" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">8. Property Location / Address *</label>
+              <input type="text" required placeholder="City, District, Landmark" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
 
             <!-- 9. Approximate Dimensions -->
-            <div>
-              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2">9. Approx Dimensions (W × H)</label>
-              <input type="text" placeholder="e.g. 2400mm × 1800mm or sq.ft" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
+            <div class="flex flex-col justify-end">
+              <label class="block text-xs uppercase font-bold tracking-wider text-charcoal dark:text-stone-300 mb-2 min-h-[1.5rem] md:min-h-[2.5rem] lg:min-h-[1.5rem] flex items-end">9. Approx Dimensions (W × H)</label>
+              <input type="text" placeholder="e.g. 2400mm × 1800mm or sq.ft" class="w-full h-12 px-4 rounded-xl border border-charcoal/20 dark:border-white/20 bg-ivory dark:bg-[#12181F] text-sm text-charcoal dark:text-white focus:outline-none focus:border-bronze">
             </div>
           </div>
 

@@ -23,12 +23,12 @@ def build_home_2():
           Pioneering next-generation UPVC thermal engineering. We fabricate custom architectural glazed fenestrations that maximize natural light while insulating against ambient urban noise.
         </p>
 
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-          <a href="#interactive-styles" class="w-full sm:w-auto bronze-gradient-btn px-7 py-3.5 rounded-xl text-xs uppercase font-bold tracking-wider inline-flex items-center justify-center space-x-2 rtl:space-x-reverse">
+        <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-stretch sm:items-center lg:items-stretch xl:items-center gap-4 pt-2">
+          <a href="#interactive-styles" class="w-full sm:flex-1 lg:w-full xl:w-auto xl:min-w-[220px] bronze-gradient-btn px-6 py-3.5 rounded-xl text-xs uppercase font-bold tracking-wider inline-flex items-center justify-center space-x-2 rtl:space-x-reverse whitespace-nowrap shadow-xl">
             <span>Explore Window Styles</span>
             <i data-lucide="arrow-down" class="w-4 h-4"></i>
           </a>
-          <a href="contact.html#measurement-booking" class="w-full sm:w-auto px-7 py-3.5 rounded-xl text-xs uppercase font-bold tracking-wider bg-white/10 hover:bg-white/20 border border-white/20 text-white inline-flex items-center justify-center space-x-2 rtl:space-x-reverse transition-all">
+          <a href="contact.html#measurement-booking" class="w-full sm:flex-1 lg:w-full xl:w-auto xl:min-w-[220px] px-6 py-3.5 rounded-xl text-xs uppercase font-bold tracking-wider bg-white/10 hover:bg-white/20 border border-white/20 text-white inline-flex items-center justify-center space-x-2 rtl:space-x-reverse transition-all whitespace-nowrap">
             <span>Schedule Laser Audit</span>
             <i data-lucide="calendar" class="w-4 h-4 text-bronze"></i>
           </a>
@@ -79,7 +79,7 @@ def build_home_2():
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <!-- Creative Image Composition -->
-          <div class="lg:col-span-6 relative" data-aos="fade-right">
+          <div class="lg:col-span-6 relative mb-10 lg:mb-0" data-aos="fade-right">
             <div class="rounded-3xl overflow-hidden shadow-2xl border border-charcoal/10 dark:border-white/10 aspect-[4/3]">
               <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1000&q=80" 
                    alt="Modern structural glass corner with UPVC mullions" 
@@ -87,7 +87,7 @@ def build_home_2():
             </div>
 
             <!-- Overlapping Floating Stat Badge -->
-            <div class="absolute -bottom-8 right-6 bg-white dark:bg-[#182029] p-6 rounded-2xl shadow-2xl border border-bronze/30 max-w-xs text-charcoal dark:text-white" data-aos="zoom-in" data-aos-delay="200">
+            <div class="absolute -bottom-6 sm:-bottom-8 right-4 sm:right-6 bg-white dark:bg-[#182029] p-4 sm:p-6 rounded-2xl shadow-2xl border border-bronze/30 max-w-[280px] sm:max-w-xs text-charcoal dark:text-white" data-aos="zoom-in" data-aos-delay="200">
               <div class="flex items-center space-x-3 rtl:space-x-reverse mb-2">
                 <i data-lucide="award" class="w-6 h-6 text-bronze"></i>
                 <span class="text-xs uppercase font-bold tracking-wider font-mono">Certified Fabricator</span>
@@ -114,22 +114,22 @@ def build_home_2():
             </p>
 
             <!-- 4 Distinct Animated Statistic Tiles -->
-            <div class="grid grid-cols-2 gap-6 pt-4">
-              <div class="p-5 rounded-2xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm">
-                <span class="block text-3xl font-display font-extrabold text-bronze" data-counter="45000" data-suffix="+">0</span>
-                <span class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 uppercase tracking-wider mt-1 block">Units Fabricated</span>
+            <div class="grid grid-cols-2 gap-3.5 sm:gap-6 pt-4 items-stretch">
+              <div class="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm flex flex-col justify-center">
+                <span class="block text-xl sm:text-2xl lg:text-3xl font-display font-extrabold text-bronze whitespace-nowrap" data-counter="45000" data-suffix="+">0</span>
+                <span class="text-[10px] sm:text-xs font-semibold text-charcoal/80 dark:text-stone-300 uppercase tracking-wider mt-1 block">Units Fabricated</span>
               </div>
-              <div class="p-5 rounded-2xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm">
-                <span class="block text-3xl font-display font-extrabold text-bronze" data-counter="1800" data-suffix="+">0</span>
-                <span class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 uppercase tracking-wider mt-1 block">Luxury Villas Completed</span>
+              <div class="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm flex flex-col justify-center">
+                <span class="block text-xl sm:text-2xl lg:text-3xl font-display font-extrabold text-bronze whitespace-nowrap" data-counter="1800" data-suffix="+">0</span>
+                <span class="text-[10px] sm:text-xs font-semibold text-charcoal/80 dark:text-stone-300 uppercase tracking-wider mt-1 block">Luxury Villas Completed</span>
               </div>
-              <div class="p-5 rounded-2xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm">
-                <span class="block text-3xl font-display font-extrabold text-bronze" data-counter="99" data-suffix="%">0</span>
-                <span class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 uppercase tracking-wider mt-1 block">Client Recommendation</span>
+              <div class="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm flex flex-col justify-center">
+                <span class="block text-xl sm:text-2xl lg:text-3xl font-display font-extrabold text-bronze whitespace-nowrap" data-counter="99" data-suffix="%">0</span>
+                <span class="text-[10px] sm:text-xs font-semibold text-charcoal/80 dark:text-stone-300 uppercase tracking-wider mt-1 block">Client Recommendation</span>
               </div>
-              <div class="p-5 rounded-2xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm">
-                <span class="block text-3xl font-display font-extrabold text-bronze" data-counter="20" data-suffix=" Years">0</span>
-                <span class="text-xs font-semibold text-charcoal/80 dark:text-stone-300 uppercase tracking-wider mt-1 block">Full System Warranty</span>
+              <div class="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 shadow-sm flex flex-col justify-center">
+                <span class="block text-xl sm:text-2xl lg:text-3xl font-display font-extrabold text-bronze whitespace-nowrap" data-counter="20" data-suffix=" Years">0</span>
+                <span class="text-[10px] sm:text-xs font-semibold text-charcoal/80 dark:text-stone-300 uppercase tracking-wider mt-1 block">Full System Warranty</span>
               </div>
             </div>
 
@@ -159,13 +159,13 @@ def build_home_2():
 
         <!-- Interactive Style Switcher Tabs -->
         <div class="flex flex-wrap items-center justify-center gap-3 mb-12" data-aos="fade-up">
-          <button class="style-tab-btn active px-5 py-2.5 rounded-full border-2 border-bronze text-bronze font-bold text-xs uppercase tracking-wider transition-all" data-target="tab-casement">
+          <button class="style-tab-btn active w-full sm:w-auto sm:min-w-[200px] text-center px-6 py-3 rounded-full border-2 border-bronze text-bronze font-bold text-xs uppercase tracking-wider transition-all" data-target="tab-casement">
             Casement Windows
           </button>
-          <button class="style-tab-btn px-5 py-2.5 rounded-full border-2 border-transparent text-charcoal/70 dark:text-stone-300 hover:border-charcoal/20 font-bold text-xs uppercase tracking-wider transition-all" data-target="tab-sliding">
+          <button class="style-tab-btn w-full sm:w-auto sm:min-w-[200px] text-center px-6 py-3 rounded-full border-2 border-transparent text-charcoal/70 dark:text-stone-300 hover:border-charcoal/20 font-bold text-xs uppercase tracking-wider transition-all" data-target="tab-sliding">
             Sliding Windows
           </button>
-          <button class="style-tab-btn px-5 py-2.5 rounded-full border-2 border-transparent text-charcoal/70 dark:text-stone-300 hover:border-charcoal/20 font-bold text-xs uppercase tracking-wider transition-all" data-target="tab-fixed">
+          <button class="style-tab-btn w-full sm:w-auto sm:min-w-[200px] text-center px-6 py-3 rounded-full border-2 border-transparent text-charcoal/70 dark:text-stone-300 hover:border-charcoal/20 font-bold text-xs uppercase tracking-wider transition-all" data-target="tab-fixed">
             Fixed Picture Glazing
           </button>
         </div>
@@ -328,23 +328,23 @@ def build_home_2():
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <!-- Left: Narrative & Interactive Decibel Simulator -->
-          <div class="lg:col-span-7 space-y-6" data-aos="fade-right">
-            <div class="flex items-center space-x-2 rtl:space-x-reverse">
+          <div class="lg:col-span-7 space-y-6 max-w-2xl mx-auto lg:max-w-none w-full text-left md:text-center lg:text-left" data-aos="fade-right">
+            <div class="flex items-center justify-start md:justify-center lg:justify-start space-x-2 rtl:space-x-reverse">
               <span class="w-6 h-0.5 bg-bronze"></span>
               <span class="text-xs uppercase font-bold tracking-widest text-bronze">Acoustic & Thermal Physics</span>
             </div>
 
             <h2 class="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
-              Silence the City. <br>
+              Silence the City. <br class="hidden sm:inline">
               Master Your Indoor Climate.
             </h2>
 
-            <p class="text-sm text-stone-300 leading-relaxed max-w-xl">
+            <p class="text-sm text-stone-300 leading-relaxed max-w-xl md:max-w-2xl lg:max-w-xl mx-auto lg:mx-0">
               Standard single-pane aluminum frames leak indoor cooling and allow exterior traffic roar to permeate your sanctum. VISTRAL's multi-chamber fusion profiles and double-barrier EPDM seals drop noise pollution down to an imperceptible whisper.
             </p>
 
             <!-- Interactive Decibel Visualizer Widget -->
-            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 max-w-xl">
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 max-w-xl md:max-w-2xl lg:max-w-xl mx-auto lg:mx-0 text-left">
               <div class="flex items-center justify-between">
                 <span class="text-xs uppercase tracking-wider text-stone-400 font-mono">Interactive Acoustic Simulator</span>
                 <span id="decibelDisplay" class="font-display text-2xl font-bold text-bronze-200">30 dB</span>
@@ -367,7 +367,7 @@ def build_home_2():
             </div>
 
             <!-- Comparison Metric Columns -->
-            <div class="grid grid-cols-2 gap-4 max-w-xl pt-2">
+            <div class="grid grid-cols-2 gap-4 max-w-xl md:max-w-2xl lg:max-w-xl mx-auto lg:mx-0 pt-2 text-left">
               <div class="p-4 rounded-xl bg-white/5 border border-white/10">
                 <span class="block text-xs uppercase text-stone-400 font-mono">Aluminum Window</span>
                 <span class="text-xl font-bold text-rose-400 font-display">U-Val: 3.8 W/m²K</span>
@@ -382,7 +382,7 @@ def build_home_2():
           </div>
 
           <!-- Right: Visual Image with Floating Performance Badges -->
-          <div class="lg:col-span-5 relative" data-aos="fade-left">
+          <div class="lg:col-span-5 relative max-w-lg mx-auto lg:max-w-none w-full" data-aos="fade-left">
             <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 aspect-[4/5] relative">
               <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80" 
                    alt="Peaceful interior with acoustic insulated UPVC window" 

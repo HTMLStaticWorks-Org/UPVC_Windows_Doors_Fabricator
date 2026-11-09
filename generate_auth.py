@@ -64,7 +64,7 @@ def build_auth_pages():
         <img src="assets/logo.svg" alt="VISTRAL Logo" class="w-10 h-10 transform group-hover:scale-105 transition-transform">
         <div class="text-left rtl:text-right">
           <span class="font-display font-extrabold text-2xl uppercase tracking-tight text-charcoal dark:text-white block leading-none">VISTRAL</span>
-          <span class="text-[9px] tracking-[0.25em] text-bronze uppercase font-bold">UPVC Systems</span>
+          <span class="text-[8px] sm:text-[9px] tracking-[0.2em] text-bronze uppercase font-bold whitespace-nowrap">UPVC Architectural Systems</span>
         </div>
       </a>
       <h2 class="font-display text-xl font-bold text-charcoal dark:text-white pt-3">Client & Partner Portal</h2>
@@ -96,7 +96,7 @@ def build_auth_pages():
           <input type="checkbox" class="rounded text-bronze focus:ring-bronze">
           <span>Remember Me</span>
         </label>
-        <a href="#" onclick="alert('Password reset link sent to your verified registered address.'); return false;" class="text-bronze font-semibold hover:underline">
+        <a href="#" onclick="alert('Password reset link sent to your verified registered address.'); return false;" class="text-bronze hover:text-bronze-700 dark:hover:text-bronze-300 font-semibold underline-offset-4 hover:underline transition-colors duration-200 cursor-pointer">
           Forgot Password?
         </a>
       </div>
@@ -143,7 +143,7 @@ def build_auth_pages():
     <!-- Redirect Link -->
     <div class="text-center text-xs text-charcoal/70 dark:text-stone-400 pt-2">
       Don't have an account yet? 
-      <a href="signup.html" class="text-bronze font-bold hover:underline">Create Account</a>
+      <a href="signup.html" class="text-bronze hover:text-bronze-700 dark:hover:text-bronze-300 font-bold underline-offset-4 hover:underline transition-colors duration-200 cursor-pointer">Create Account</a>
     </div>
   </div>
 </div>
@@ -215,7 +215,7 @@ def build_auth_pages():
         <img src="assets/logo.svg" alt="VISTRAL Logo" class="w-10 h-10 transform group-hover:scale-105 transition-transform">
         <div class="text-left rtl:text-right">
           <span class="font-display font-extrabold text-2xl uppercase tracking-tight text-charcoal dark:text-white block leading-none">VISTRAL</span>
-          <span class="text-[9px] tracking-[0.25em] text-bronze uppercase font-bold">UPVC Systems</span>
+          <span class="text-[8px] sm:text-[9px] tracking-[0.2em] text-bronze uppercase font-bold whitespace-nowrap">UPVC Architectural Systems</span>
         </div>
       </a>
       <h2 class="font-display text-xl font-bold text-charcoal dark:text-white pt-2">Create Architectural Account</h2>
@@ -274,7 +274,7 @@ def build_auth_pages():
       <div class="pt-1">
         <label class="flex items-start space-x-2 text-xs text-charcoal/70 dark:text-stone-300 rtl:space-x-reverse cursor-pointer">
           <input type="checkbox" required class="rounded text-bronze focus:ring-bronze mt-0.5">
-          <span>I agree to the <a href="#" class="text-bronze underline">Terms & Conditions</a> and <a href="#" class="text-bronze underline">Privacy Policy</a> of VISTRAL Systems.</span>
+          <span>I agree to the <a href="#" onclick="alert('VISTRAL Terms & Conditions: Quality guarantees, warranty obligations, and authorized installation guidelines.'); return false;" class="text-bronze hover:text-bronze-700 dark:hover:text-bronze-300 font-semibold underline underline-offset-4 transition-colors duration-200 cursor-pointer">Terms & Conditions</a> and <a href="#" onclick="alert('VISTRAL Privacy Policy: Client data is strictly confidential and protected.'); return false;" class="text-bronze hover:text-bronze-700 dark:hover:text-bronze-300 font-semibold underline underline-offset-4 transition-colors duration-200 cursor-pointer">Privacy Policy</a> of VISTRAL Systems.</span>
         </label>
       </div>
 
@@ -321,7 +321,7 @@ def build_auth_pages():
     <!-- Login redirect link -->
     <div class="text-center text-xs text-charcoal/70 dark:text-stone-400 pt-2">
       Already have a client account? 
-      <a href="login.html" class="text-bronze font-bold hover:underline">Log in here</a>
+      <a href="login.html" class="text-bronze hover:text-bronze-700 dark:hover:text-bronze-300 font-bold underline-offset-4 hover:underline transition-colors duration-200 cursor-pointer">Log in here</a>
     </div>
   </div>
 </div>

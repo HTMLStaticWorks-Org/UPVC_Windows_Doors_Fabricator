@@ -112,6 +112,29 @@ h1, h2, h3, h4, .font-display {
   margin-left: auto;
 }
 
+/* Mobile Navigation Drawer (LTR & RTL responsive docking) */
+#mobileMenuDrawer {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
+}
+
+html[dir="ltr"] #mobileMenuDrawer,
+html:not([dir="rtl"]) #mobileMenuDrawer {
+  right: 0;
+  left: auto;
+  transform: translateX(100%);
+}
+
+html[dir="rtl"] #mobileMenuDrawer {
+  left: 0;
+  right: auto;
+  transform: translateX(-100%);
+}
+
+#mobileMenuDrawer.drawer-open {
+  transform: translateX(0) !important;
+  visibility: visible !important;
+}
+
 /* Glass & Texture Accents */
 .glass-nav {
   backdrop-filter: blur(16px);
@@ -339,5 +362,34 @@ details[open] summary ~ * {
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5) !important;
   transform: translateY(-4px) scale(1.08) !important;
 }
+
+/* Gallery Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+/* Footer Menu & Column Alignment */
+.footer-nav-col h4 {
+  min-height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav-col ul li a {
+  display: inline-block;
+  line-height: 1.6;
+}
+
 
 

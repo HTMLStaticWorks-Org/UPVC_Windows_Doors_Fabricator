@@ -67,25 +67,25 @@ def build_home_1():
         </div>
 
         <!-- Floating Architectural Detail Card (Editorial Layer) -->
-        <div class="lg:col-span-4 hidden lg:block" data-aos="fade-left">
-          <div class="relative glass-card p-6 rounded-2xl border border-white/20 shadow-2xl space-y-4 animate-float-slow">
-            <div class="flex items-center justify-between text-white">
+        <div class="lg:col-span-4 w-full max-w-md mx-auto lg:max-w-none mt-8 lg:mt-0" data-aos="fade-up">
+          <div class="relative glass-card bg-white/85 dark:bg-[#182029]/85 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-charcoal/10 dark:border-white/15 shadow-2xl space-y-4 animate-float-slow">
+            <div class="flex items-center justify-between text-charcoal dark:text-white">
               <div class="flex items-center space-x-2 rtl:space-x-reverse">
-                <i data-lucide="shield-check" class="w-5 h-5 text-bronze"></i>
-                <span class="text-xs uppercase font-bold tracking-wider">Reinforced Core</span>
+                <i data-lucide="shield-check" class="w-5 h-5 text-bronze dark:text-bronze-400"></i>
+                <span class="text-xs uppercase font-extrabold tracking-wider text-charcoal dark:text-white">Reinforced Core</span>
               </div>
-              <span class="px-2 py-0.5 rounded bg-bronze/30 text-[10px] text-bronze-100 font-mono font-bold">GALVANIZED STEEL</span>
+              <span class="px-2.5 py-1 rounded bg-bronze/15 dark:bg-bronze/30 text-[10px] text-bronze-800 dark:text-bronze-200 border border-bronze/30 font-mono font-bold tracking-wider">GALVANIZED STEEL</span>
             </div>
             <div class="rounded-xl overflow-hidden aspect-[4/3] relative">
               <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=800&q=80" 
                    alt="Precision mitred UPVC corner detail" 
                    class="w-full h-full object-cover">
-              <div class="absolute bottom-2 left-2 right-2 bg-charcoal/80 backdrop-blur-md px-3 py-1.5 rounded text-[11px] text-white flex justify-between">
-                <span>Multi-Chambered Profile</span>
-                <span class="text-bronze font-bold">Series 88mm</span>
+              <div class="absolute bottom-2 left-2 right-2 bg-charcoal/90 backdrop-blur-md px-3 py-1.5 rounded text-[11px] text-white flex justify-between items-center border border-white/10">
+                <span class="font-medium">Multi-Chambered Profile</span>
+                <span class="text-bronze-300 font-bold">Series 88mm</span>
               </div>
             </div>
-            <p class="text-xs text-stone-200 leading-normal">
+            <p class="text-xs text-charcoal/85 dark:text-stone-300 font-medium leading-relaxed">
               Fused seamless corners resistant to tropical humidity, salt air corrosion, and heavy driving rainstorms.
             </p>
           </div>
@@ -115,60 +115,66 @@ def build_home_1():
         <!-- Creative Non-Ordinary Layout: Asymmetrical Feature Bento Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <!-- Item 1: Energy Efficiency (Hero Box) -->
-          <div class="md:col-span-2 lg:col-span-2 p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative overflow-hidden group shadow-lg" data-aos="fade-up">
+          <div class="md:col-span-3 lg:col-span-2 p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative overflow-hidden group shadow-lg" data-aos="fade-up">
             <div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-bronze/10 filter blur-2xl group-hover:bg-bronze/20 transition-all"></div>
             <div class="w-14 h-14 rounded-2xl bg-bronze/15 flex items-center justify-center text-bronze mb-6">
               <i data-lucide="zap-off" class="w-7 h-7"></i>
             </div>
             <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Thermal Barrier</span>
             <h3 class="font-display text-2xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Ultra Energy Efficiency</h3>
-            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed max-w-md">
+            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed max-w-md md:max-w-xl lg:max-w-md">
               Multi-chambered insulating internal profiles eliminate thermal bridging. Slash HVAC cooling and heating expenses by up to 42% year-round with Low-E argon double and triple glazing.
             </p>
-            <div class="mt-6 flex items-center space-x-4 text-xs font-semibold text-charcoal/80 dark:text-stone-200 rtl:space-x-reverse">
+            <div class="mt-6 flex flex-wrap items-center gap-4 text-xs font-semibold text-charcoal/80 dark:text-stone-200 rtl:space-x-reverse">
               <span class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-bronze mr-1 rtl:ml-1"></i> Passivhaus Certified</span>
               <span class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-bronze mr-1 rtl:ml-1"></i> Solar Heat Gain (SHGC 0.24)</span>
             </div>
           </div>
 
           <!-- Item 2: Sound Insulation -->
-          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg" data-aos="fade-up" data-aos-delay="100">
-            <div class="w-14 h-14 rounded-2xl bg-charcoal text-white dark:bg-stone-800 flex items-center justify-center mb-6">
-              <i data-lucide="volume-x" class="w-7 h-7 text-bronze"></i>
+          <div class="md:col-span-1 lg:col-span-1 p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-charcoal text-white dark:bg-stone-800 flex items-center justify-center mb-6">
+                <i data-lucide="volume-x" class="w-7 h-7 text-bronze"></i>
+              </div>
+              <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Acoustic Shield</span>
+              <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Sound Insulation</h3>
+              <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                Dampens high-traffic decibels, highway drones, and aircraft noise by up to 45 dB with double EPDM compression gaskets.
+              </p>
             </div>
-            <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Acoustic Shield</span>
-            <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Sound Insulation</h3>
-            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
-              Dampens high-traffic decibels, highway drones, and aircraft noise by up to 45 dB with double EPDM compression gaskets.
-            </p>
           </div>
 
           <!-- Item 3: Weather Resistance -->
-          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg" data-aos="fade-up" data-aos-delay="200">
-            <div class="w-14 h-14 rounded-2xl bg-bronze/15 flex items-center justify-center text-bronze mb-6">
-              <i data-lucide="cloud-lightning" class="w-7 h-7"></i>
+          <div class="md:col-span-1 lg:col-span-1 p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-bronze/15 flex items-center justify-center text-bronze mb-6">
+                <i data-lucide="cloud-lightning" class="w-7 h-7"></i>
+              </div>
+              <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Monsoon Proof</span>
+              <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Weather Resistance</h3>
+              <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                Tested to withstand 240 km/h cyclone gusts and driving torrential rain without a single droplet penetrating internal seals.
+              </p>
             </div>
-            <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Monsoon Proof</span>
-            <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Weather Resistance</h3>
-            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
-              Tested to withstand 240 km/h cyclone gusts and driving torrential rain without a single droplet penetrating internal seals.
-            </p>
           </div>
 
           <!-- Item 4: Structural Durability -->
-          <div class="p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg" data-aos="fade-up" data-aos-delay="300">
-            <div class="w-14 h-14 rounded-2xl bg-bronze/15 flex items-center justify-center text-bronze mb-6">
-              <i data-lucide="hammer" class="w-7 h-7"></i>
+          <div class="md:col-span-1 lg:col-span-1 p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#182029] border border-charcoal/10 dark:border-white/10 relative group shadow-lg flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-bronze/15 flex items-center justify-center text-bronze mb-6">
+                <i data-lucide="hammer" class="w-7 h-7"></i>
+              </div>
+              <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Reinforced Core</span>
+              <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Durability & Lifespan</h3>
+              <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
+                Resistant to yellowing, UV chalking, warping, termites, and corrosive coastal salt mist. Rated for 50+ years of operation.
+              </p>
             </div>
-            <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Reinforced Core</span>
-            <h3 class="font-display text-xl font-bold mt-2 mb-3 text-charcoal dark:text-white">Durability & Lifespan</h3>
-            <p class="text-sm text-charcoal/70 dark:text-stone-300 leading-relaxed">
-              Resistant to yellowing, UV chalking, warping, termites, and corrosive coastal salt mist. Rated for 50+ years of operation.
-            </p>
           </div>
 
           <!-- Item 5: Low Maintenance (Wide Box) -->
-          <div class="md:col-span-2 lg:col-span-3 p-8 rounded-3xl bg-charcoal text-white dark:bg-[#182029] border border-bronze/20 relative overflow-hidden group shadow-xl flex flex-col md:flex-row items-center justify-between gap-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="md:col-span-3 lg:col-span-3 p-8 rounded-3xl bg-charcoal text-white dark:bg-[#182029] border border-bronze/20 relative overflow-hidden group shadow-xl flex flex-col md:flex-row items-center justify-between gap-6" data-aos="fade-up" data-aos-delay="400">
             <div class="space-y-3 max-w-xl">
               <span class="text-xs font-mono font-bold text-bronze uppercase tracking-wider">Zero Maintenance Hassle</span>
               <h3 class="font-display text-2xl font-bold text-white">Never Sand, Varnish, or Repaint Again</h3>
@@ -440,25 +446,25 @@ def build_home_1():
           </div>
 
           <!-- Creative Overlapping Images Composition -->
-          <div class="lg:col-span-6 relative" data-aos="fade-left">
-            <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#182029] max-w-[90%]">
+          <div class="lg:col-span-6 relative mt-8 lg:mt-0 pb-6 sm:pb-8" data-aos="fade-left">
+            <div class="relative z-10 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl border-2 sm:border-4 border-white dark:border-[#182029] w-[82%] sm:max-w-[90%]">
               <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80" 
                    alt="Robotic precision CNC milling of UPVC profiles" 
                    class="w-full h-auto object-cover">
             </div>
 
-            <div class="absolute -bottom-8 -right-4 w-2/3 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#182029] z-20 hidden sm:block">
+            <div class="absolute bottom-2 right-0 sm:-bottom-8 sm:-right-4 w-[55%] sm:w-2/3 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl border-2 sm:border-4 border-white dark:border-[#182029] z-20 block">
               <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" 
                    alt="Automated 4-point thermal weld fusion" 
                    class="w-full h-auto object-cover">
             </div>
 
             <!-- Floating Metric Badge -->
-            <div class="absolute top-8 -left-6 z-30 bg-charcoal text-white px-5 py-3 rounded-2xl shadow-xl border border-bronze/30 hidden sm:flex items-center space-x-3 rtl:space-x-reverse">
-              <div class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></div>
+            <div class="absolute top-3 left-3 sm:top-8 sm:-left-6 z-30 bg-charcoal/95 backdrop-blur-md text-white px-3.5 py-2 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl shadow-xl border border-bronze/30 flex items-center space-x-2.5 sm:space-x-3 rtl:space-x-reverse">
+              <div class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-400 animate-pulse flex-shrink-0"></div>
               <div>
-                <span class="block text-xs uppercase text-stone-400 font-mono">Factory Output</span>
-                <span class="text-sm font-bold font-display text-bronze-200">12,000+ Sashes / Month</span>
+                <span class="block text-[10px] sm:text-xs uppercase text-stone-400 font-mono tracking-wider">Factory Output</span>
+                <span class="text-xs sm:text-sm font-bold font-display text-bronze-200">12,000+ Sashes / Month</span>
               </div>
             </div>
           </div>

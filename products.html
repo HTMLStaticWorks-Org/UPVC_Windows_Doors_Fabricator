@@ -80,12 +80,12 @@
         <img src="assets/logo.svg" alt="VISTRAL Logo" class="w-8 h-8 sm:w-9 sm:h-9 transform group-hover:rotate-6 transition-transform">
         <div class="flex flex-col">
           <span class="font-display font-bold text-xl sm:text-2xl tracking-tight text-charcoal dark:text-white uppercase leading-none">VISTRAL</span>
-          <span class="text-[9px] sm:text-[10px] tracking-[0.25em] text-bronze uppercase font-semibold">UPVC Systems</span>
+          <span class="text-[8px] sm:text-[9px] xl:text-[10px] tracking-[0.2em] text-bronze uppercase font-semibold whitespace-nowrap">UPVC Architectural Systems</span>
         </div>
       </a>
 
-      <!-- Desktop Navigation Links (Responsive Spacing: never wraps at 1024px) -->
-      <nav class="hidden lg:flex items-center space-x-3 xl:space-x-6 2xl:space-x-7 rtl:space-x-reverse flex-shrink-0">
+      <!-- Desktop Navigation Links (Responsive Spacing: visible from 1280px+) -->
+      <nav class="hidden xl:flex items-center space-x-6 2xl:space-x-7 rtl:space-x-reverse flex-shrink-0">
         <a href="index.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">Home 1</a>
 <a href="home-2.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">Home 2</a>
 <a href="about.html" class="nav-link text-xs xl:text-sm uppercase tracking-wider whitespace-nowrap transition-colors duration-200 text-charcoal/80 dark:text-stone-300 hover:text-bronze dark:hover:text-bronze">About Us</a>
@@ -97,7 +97,7 @@
       </nav>
 
       <!-- Utility Controls & Actions -->
-      <div class="hidden lg:flex items-center space-x-2 xl:space-x-3 rtl:space-x-reverse flex-shrink-0">
+      <div class="hidden xl:flex items-center space-x-2 xl:space-x-3 rtl:space-x-reverse flex-shrink-0">
         <!-- RTL Toggle Icon -->
         <button class="rtl-toggle p-2 rounded-full border border-charcoal/15 dark:border-white/15 hover:border-bronze transition-all text-charcoal dark:text-stone-200 hover:text-bronze flex items-center justify-center" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Layout Direction">
           <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -122,8 +122,8 @@
         </a>
       </div>
 
-      <!-- Mobile / Tablet Controls (< 1024px) -->
-      <div class="flex items-center lg:hidden">
+      <!-- Mobile / Tablet Controls (< 1280px, including 1024px) -->
+      <div class="flex items-center xl:hidden">
         <button id="mobileMenuToggle" class="p-2 rounded-lg border border-charcoal/20 dark:border-white/20 text-charcoal dark:text-white" aria-label="Open Navigation">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
@@ -138,7 +138,7 @@
   <div id="mobileMenuBackdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
   <!-- Mobile Navigation Drawer -->
-  <div id="mobileMenuDrawer" class="invisible fixed top-0 right-0 rtl:right-auto rtl:left-0 w-80 max-w-[85%] h-full bg-ivory dark:bg-[#182029] z-50 shadow-2xl transform translate-x-full rtl:-translate-x-full transition-transform duration-300 ease-in-out p-6 flex flex-col justify-between overflow-y-auto">
+  <div id="mobileMenuDrawer" class="invisible fixed top-0 right-0 rtl:right-auto rtl:left-0 w-80 max-w-[85%] h-full bg-ivory dark:bg-[#182029] z-50 shadow-2xl transition-transform duration-300 ease-in-out p-6 flex flex-col justify-between overflow-y-auto">
     <div>
       <div class="flex items-center justify-between pb-6 border-b border-charcoal/10 dark:border-white/10">
         <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
@@ -765,17 +765,17 @@
   <!-- Premium Footer -->
   <footer class="bg-white dark:bg-charcoal text-charcoal dark:text-white pt-16 pb-12 border-t border-charcoal/10 dark:border-bronze/20 mt-auto transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-charcoal/10 dark:border-white/10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-12 pb-12 border-b border-charcoal/10 dark:border-white/10">
         <!-- Col 1: Brand & Bio -->
-        <div class="lg:col-span-2 space-y-4">
+        <div class="space-y-4">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="assets/logo.svg" alt="VISTRAL Logo" class="w-9 h-9">
             <div>
               <span class="font-display font-bold text-2xl tracking-tight text-charcoal dark:text-white uppercase leading-none">VISTRAL</span>
-              <span class="block text-[10px] tracking-[0.25em] text-bronze uppercase font-semibold">UPVC Architectural Systems</span>
+              <span class="block text-[10px] tracking-[0.25em] text-bronze uppercase font-semibold whitespace-nowrap">UPVC Architectural Systems</span>
             </div>
           </div>
-          <p class="text-charcoal/70 dark:text-stone-300 text-sm leading-relaxed max-w-sm">
+          <p class="text-charcoal/70 dark:text-stone-300 text-xs sm:text-sm leading-relaxed">
             Engineering luxury architectural glazing, ultra-energy-efficient UPVC window frames, and precision sliding patio doors. Certified German profiles engineered for tropical resilience, acoustic silence, and lifelong architectural elegance.
           </p>
           <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
@@ -807,34 +807,34 @@
         </div>
 
         <!-- Col 2: Window Solutions -->
-        <div class="space-y-3">
-          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze">UPVC Windows</h4>
+        <div class="space-y-3 footer-nav-col">
+          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze whitespace-nowrap">UPVC Windows</h4>
           <ul class="space-y-2 text-sm text-charcoal/70 dark:text-stone-300">
-            <li><a href="products.html#casement-windows" class="hover:text-bronze transition-colors">Casement Windows</a></li>
-            <li><a href="products.html#sliding-windows" class="hover:text-bronze transition-colors">Sliding Windows</a></li>
-            <li><a href="products.html#tilt-turn-windows" class="hover:text-bronze transition-colors">Tilt & Turn Systems</a></li>
-            <li><a href="products.html#fixed-panoramic" class="hover:text-bronze transition-colors">Fixed Panoramic</a></li>
-            <li><a href="products.html#bay-windows" class="hover:text-bronze transition-colors">Bay & Combination</a></li>
-            <li><a href="products.html#arch-windows" class="hover:text-bronze transition-colors">Architectural Arches</a></li>
+            <li><a href="products.html#casement-windows" class="hover:text-bronze transition-colors whitespace-nowrap">Casement Windows</a></li>
+            <li><a href="products.html#sliding-windows" class="hover:text-bronze transition-colors whitespace-nowrap">Sliding Windows</a></li>
+            <li><a href="products.html#tilt-turn-windows" class="hover:text-bronze transition-colors whitespace-nowrap">Tilt & Turn Systems</a></li>
+            <li><a href="products.html#fixed-panoramic" class="hover:text-bronze transition-colors whitespace-nowrap">Fixed Panoramic</a></li>
+            <li><a href="products.html#bay-windows" class="hover:text-bronze transition-colors whitespace-nowrap">Bay & Combination</a></li>
+            <li><a href="products.html#arch-windows" class="hover:text-bronze transition-colors whitespace-nowrap">Architectural Arches</a></li>
           </ul>
         </div>
 
         <!-- Col 3: Door Systems -->
-        <div class="space-y-3">
-          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze">UPVC Doors</h4>
+        <div class="space-y-3 footer-nav-col">
+          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze whitespace-nowrap">UPVC Doors</h4>
           <ul class="space-y-2 text-sm text-charcoal/70 dark:text-stone-300">
-            <li><a href="products.html#sliding-doors" class="hover:text-bronze transition-colors">Panoramic Sliding Doors</a></li>
-            <li><a href="products.html#french-doors" class="hover:text-bronze transition-colors">Classic French Doors</a></li>
-            <li><a href="products.html#folding-bifold" class="hover:text-bronze transition-colors">Folding Bi-Fold Systems</a></li>
-            <li><a href="products.html#lift-slide" class="hover:text-bronze transition-colors">Heavy Lift & Slide</a></li>
-            <li><a href="products.html#entrance-doors" class="hover:text-bronze transition-colors">High-Security Entrance</a></li>
-            <li><a href="products.html#balcony-doors" class="hover:text-bronze transition-colors">Balcony & Terrace Doors</a></li>
+            <li><a href="products.html#sliding-doors" class="hover:text-bronze transition-colors whitespace-nowrap">Panoramic Sliding Doors</a></li>
+            <li><a href="products.html#french-doors" class="hover:text-bronze transition-colors whitespace-nowrap">Classic French Doors</a></li>
+            <li><a href="products.html#folding-bifold" class="hover:text-bronze transition-colors whitespace-nowrap">Folding Bi-Fold Systems</a></li>
+            <li><a href="products.html#lift-slide" class="hover:text-bronze transition-colors whitespace-nowrap">Heavy Lift & Slide</a></li>
+            <li><a href="products.html#entrance-doors" class="hover:text-bronze transition-colors whitespace-nowrap">High-Security Entrance</a></li>
+            <li><a href="products.html#balcony-doors" class="hover:text-bronze transition-colors whitespace-nowrap">Balcony & Terrace Doors</a></li>
           </ul>
         </div>
 
         <!-- Col 4: Newsletter & Direct Contact -->
         <div class="space-y-3">
-          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze">Architectural Gazette</h4>
+          <h4 class="font-display text-sm uppercase tracking-wider font-bold text-bronze whitespace-nowrap">Architectural Gazette</h4>
           <p class="text-xs text-charcoal/70 dark:text-stone-300 leading-relaxed">
             Receive technical whitepapers, acoustic glazing updates, and new profile releases directly in your inbox.
           </p>
@@ -842,17 +842,17 @@
             <div class="relative">
               <input type="email" required placeholder="Enter your work email" class="w-full bg-ivory dark:bg-white/5 border border-charcoal/15 dark:border-white/15 focus:border-bronze rounded-lg px-3.5 py-2.5 text-xs text-charcoal dark:text-white placeholder-charcoal/40 dark:placeholder-stone-400 focus:outline-none">
             </div>
-            <button type="submit" class="bronze-gradient-btn py-2 px-4 rounded-lg text-xs uppercase font-bold tracking-wider text-center">
+            <button type="submit" class="bronze-gradient-btn py-2 px-4 rounded-lg text-xs uppercase font-bold tracking-wider text-center whitespace-nowrap">
               Subscribe
             </button>
           </form>
           <div class="pt-2 text-xs text-charcoal/70 dark:text-stone-400 space-y-1">
-            <div class="flex items-center space-x-2 rtl:space-x-reverse">
-              <i data-lucide="phone-call" class="w-3.5 h-3.5 text-bronze"></i>
+            <div class="flex items-center space-x-2 rtl:space-x-reverse whitespace-nowrap">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5 text-bronze flex-shrink-0"></i>
               <span>+1 (800) 482-7832 (Toll Free)</span>
             </div>
-            <div class="flex items-center space-x-2 rtl:space-x-reverse">
-              <i data-lucide="mail" class="w-3.5 h-3.5 text-bronze"></i>
+            <div class="flex items-center space-x-2 rtl:space-x-reverse whitespace-nowrap">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-bronze flex-shrink-0"></i>
               <span>architects@vistralsystems.com</span>
             </div>
           </div>
@@ -861,12 +861,12 @@
 
       <!-- Bottom Bar -->
       <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-charcoal/60 dark:text-stone-400 gap-4">
-        <p>&copy; 2026 VISTRAL Architectural UPVC Systems Inc. All rights reserved.</p>
-        <div class="flex items-center space-x-5 rtl:space-x-reverse">
-          <a href="about.html" class="hover:text-bronze transition-colors">Quality Standards</a>
-          <a href="contact.html" class="hover:text-bronze transition-colors">Factory Audits</a>
-          <a href="login.html" class="hover:text-bronze transition-colors">Partner Portal</a>
-          <a href="contact.html#faq" class="hover:text-bronze transition-colors">Warranty & FAQ</a>
+        <p class="text-center md:text-left rtl:md:text-right">&copy; 2026 VISTRAL Architectural UPVC Systems Inc. All rights reserved.</p>
+        <div class="flex items-center space-x-4 sm:space-x-5 rtl:space-x-reverse flex-wrap sm:flex-nowrap justify-center sm:justify-end">
+          <a href="about.html" class="hover:text-bronze transition-colors whitespace-nowrap">Quality Standards</a>
+          <a href="contact.html" class="hover:text-bronze transition-colors whitespace-nowrap">Factory Audits</a>
+          <a href="login.html" class="hover:text-bronze transition-colors whitespace-nowrap">Partner Portal</a>
+          <a href="contact.html#faq" class="hover:text-bronze transition-colors whitespace-nowrap">Warranty & FAQ</a>
           
           <!-- Back to Top Arrow in Right Corner -->
           <button type="button" class="back-to-top-btn w-9 h-9 rounded-full bg-charcoal/5 dark:bg-white/10 hover:bg-bronze dark:hover:bg-bronze border border-charcoal/15 dark:border-white/20 text-charcoal dark:text-stone-200 hover:text-white dark:hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(182,139,88,0.4)] ml-2 rtl:ml-0 rtl:mr-2 group cursor-pointer" title="Back to Top" aria-label="Back to Top">
@@ -876,6 +876,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating Scroll / Back to Top Button (Visible across all sections) -->
+  <button id="floatingScrollBtn" type="button" class="fixed bottom-6 right-6 rtl:right-auto rtl:left-6 z-40 w-11 h-11 rounded-full bg-white/95 dark:bg-[#182029]/95 backdrop-blur-md border border-charcoal/15 dark:border-white/20 text-charcoal dark:text-stone-200 hover:text-white dark:hover:text-white hover:bg-bronze dark:hover:bg-bronze shadow-2xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-bronze group cursor-pointer" title="Scroll Down" aria-label="Scroll">
+    <i data-lucide="arrow-down" id="scrollDownIcon" class="w-5 h-5 transform group-hover:translate-y-0.5 transition-transform"></i>
+    <i data-lucide="arrow-up" id="scrollUpIcon" class="w-5 h-5 transform group-hover:-translate-y-0.5 transition-transform hidden"></i>
+  </button>
 
   <!-- Lightbox Modal Container -->
   <div id="lightboxModal" class="hidden fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">

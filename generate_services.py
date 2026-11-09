@@ -36,16 +36,16 @@ def build_services():
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <!-- Visual Workshop Feature -->
-          <div class="lg:col-span-6 relative" data-aos="fade-right">
-            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#182029] aspect-[4/3]">
+          <div class="lg:col-span-6 relative mb-6 sm:mb-0" data-aos="fade-right">
+            <div class="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white dark:border-[#182029] aspect-[4/3]">
               <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1000&q=80" 
                    alt="Precision CNC profile fabrication machine" 
                    class="w-full h-full object-cover">
             </div>
             <!-- Floating Spec Badge -->
-            <div class="absolute -bottom-6 -left-4 bg-charcoal text-white p-5 rounded-2xl shadow-xl border border-bronze/30 max-w-xs hidden sm:block">
-              <span class="text-[10px] font-mono uppercase text-bronze font-bold block">TOLERANCE SPECIFICATION</span>
-              <span class="text-base font-bold font-display text-white">±0.2mm Digital Calibrated Precision</span>
+            <div class="absolute bottom-3 left-3 sm:-bottom-6 sm:-left-4 bg-charcoal/95 dark:bg-[#182029]/95 backdrop-blur-md text-white p-3.5 sm:p-5 rounded-xl sm:rounded-2xl shadow-2xl border border-bronze/30 max-w-[260px] sm:max-w-xs block">
+              <span class="text-[9px] sm:text-[10px] font-mono uppercase text-bronze font-bold block tracking-wider">TOLERANCE SPECIFICATION</span>
+              <span class="text-xs sm:text-base font-bold font-display text-white mt-0.5 block leading-tight">±0.2mm Digital Calibrated Precision</span>
             </div>
           </div>
 
