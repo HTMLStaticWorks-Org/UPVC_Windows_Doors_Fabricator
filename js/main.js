@@ -28,7 +28,8 @@ function initBackToTop() {
 
   function updateScrollState() {
     if (!floatingBtn || !scrollDownIcon || !scrollUpIcon) return;
-    const isScrolled = window.scrollY > 300;
+    const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+    const isScrolled = scrollY > 200;
 
     if (isScrolled) {
       scrollDownIcon.classList.add('hidden');
